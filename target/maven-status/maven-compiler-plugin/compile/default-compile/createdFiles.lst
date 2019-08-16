@@ -1,0 +1,8 @@
+bobcat\gradle\BOBCAT\AEM\BDD\CucumberInjectorSource.class
+bobcat\gradle\BOBCAT\AEM\BDD\pages\TitleComponentImpl.class
+bobcat\gradle\BOBCAT\AEM\BDD\hooks\FinishReport.class
+bobcat\gradle\BOBCAT\AEM\BDD\test\ComponentModule.class
+bobcat\gradle\BOBCAT\AEM\BDD\steps\AuthorizationSteps.class
+bobcat\gradle\BOBCAT\AEM\BDD\ScenarioContext.class
+bobcat\gradle\BOBCAT\AEM\BDD\pages\TitleComponent.class
+bobcat\gradle\BOBCAT\AEM\BDD\pages\TestPage.class

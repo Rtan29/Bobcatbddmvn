@@ -1,0 +1,55 @@
+group 'bobcat-gradle'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'maven'
+
+sourceCompatibility = 1.8
+
+def bobcatVersion = '2.1.0'
+def cucumberVersion = '4.2.6'
+def aemDependency = 'bb-aem-65'
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'com.cognifide.qa.bb', name: 'bb-core', version: bobcatVersion
+    compile group: 'com.cognifide.qa.bb', name: 'bb-aem-core', version: bobcatVersion
+    compile group: 'com.cognifide.qa.bb', name: aemDependency, version: bobcatVersion
+//    compile group: 'com.cognifide.qa.bb', name: 'bb-junit5', version: bobcatVersion
+
+    compile "io.cucumber:cucumber-java:$cucumberVersion"
+    compile "io.cucumber:cucumber-java8:$cucumberVersion"
+    compile "io.cucumber:cucumber-guice:$cucumberVersion"
+    compile "io.cucumber:cucumber-junit:$cucumberVersion"
+}
+
+def profiles = [
+        'firefox': 'firefox'
+]
+
+configurations {
+    cucumberRuntime {
+        extendsFrom testRuntime
+    }
+}
+
+task cucumber() {
+    def profile = System.getProperty('profile', 'default')
+    if (!profile.equals('default')) {
+        System.setProperty('bobcat.config.contexts', profile)
+    }
+
+    dependsOn assemble, compileJava, compileTestJava
+    doLast {
+        javaexec {
+            main = "cucumber.api.cli.Main"
+            classpath = configurations.cucumberRuntime + sourceSets.main.output + sourceSets.test.output
+            args = cucumberArgs
+            systemProperties = System.getProperties()
+        }
+    }
+}

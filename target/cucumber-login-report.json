@@ -1,0 +1,136 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 11,
+        "name": "Example AEM BDD scenario",
+        "description": "",
+        "id": "login;example-aem-bdd-scenario",
+        "after": [
+          {
+            "result": {
+              "duration": 725412400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "FinishReport.addDataAndClose(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 11235828700,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I have opened test page",
+            "match": {
+              "location": "AuthorizationSteps.I_have_opened_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1319185900,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I login",
+            "match": {
+              "location": "AuthorizationSteps.I_press_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8801571600,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I should see test page",
+            "match": {
+              "location": "AuthorizationSteps.I_should_see_welcome_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 15869681000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "the title component text should match \"Discover the Finest Gear\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Discover the Finest Gear\"",
+                  "offset": 38
+                }
+              ],
+              "location": "AuthorizationSteps.The_title_component_html_should_match(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 17,
+        "name": "Creation of Page",
+        "description": "",
+        "id": "login;creation-of-page",
+        "after": [
+          {
+            "result": {
+              "duration": 10008413800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "FinishReport.addDataAndClose(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 18,
+            "name": "Create \"Hero Page\" page under \"We.Retail/us\"",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 19,
+            "name": "set \"Title\" and \"Name\"",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 20,
+            "name": "validate if Page is created with Title and Name",
+            "match": {},
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Login",
+    "description": "  In order to edit site\n  As a site administrator\n  I want to log in\n\n  Scenario : Login with valid credentials\n    Given I have opened test page\n    And I login\n    Then I should see test page",
+    "id": "login",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/login_to_aem.feature",
+    "tags": []
+  }
+]

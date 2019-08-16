@@ -1,0 +1,1442 @@
+14:26:05.044 DEBUG com.cognifide.qa.bb.aem.core.modules.Aem65FullModule:39 - Configuring Bobcat module: Aem65FullModule
+14:26:05.197 DEBUG com.cognifide.qa.bb.aem.core.modules.AemLoginModule:42 - Configuring Bobcat module: AemLoginModule
+14:26:05.226 DEBUG com.cognifide.qa.bb.aem.core.modules.AemSitesAdminModule:47 - Configuring Bobcat module: AemSitesAdminModule
+14:26:05.256 DEBUG com.cognifide.qa.bb.aem.core.modules.SlingPageActionsModule:40 - Configuring Bobcat module: SlingPageActionsModule
+14:26:05.262 DEBUG com.cognifide.qa.bb.aem.core.modules.AemComponentModule:51 - Configuring Bobcat module: AemComponentModule
+14:26:05.294 DEBUG com.cognifide.qa.bb.aem.core.modules.AemSidePanelModule:39 - Configuring Bobcat module: AemSidePanelModule
+14:26:05.300 DEBUG com.cognifide.qa.bb.aem.core.modules.AemPageModule:40 - Configuring Bobcat module: AemPageModule
+14:26:05.304 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.DialogFieldsModule:54 - Configuring Bobcat module: DialogFieldsModule
+14:26:05.324 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:49 - Configuring Bobcat module: FieldsRegistryModule
+14:26:05.327 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:51 - Registering dialog fields...
+14:26:05.332 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:72 - - registering field: CHECKBOX [class com.cognifide.qa.bb.aem.core.component.dialog.dialogfields.DefaultCheckbox]
+14:26:05.336 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:72 - - registering field: TEXTFIELD [class com.cognifide.qa.bb.aem.core.component.dialog.dialogfields.DefaultTextfield]
+14:26:05.338 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:72 - - registering field: IMAGE [class com.cognifide.qa.bb.aem.core.component.dialog.dialogfields.DefaultImage]
+14:26:05.339 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:72 - - registering field: PATHBROWSER [class com.cognifide.qa.bb.aem.core.component.dialog.dialogfields.DefaultPathBrowser]
+14:26:05.341 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:72 - - registering field: SELECT [class com.cognifide.qa.bb.aem.core.component.dialog.dialogfields.DefaultSelect]
+14:26:05.346 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:72 - - registering field: MULTIFIELD [class com.cognifide.qa.bb.aem.core.component.dialog.dialogfields.DefaultMultifield]
+14:26:05.347 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:72 - - registering field: MULTIFIELD_ITEM [class com.cognifide.qa.bb.aem.core.component.dialog.dialogfields.DefaultMultifieldItem]
+14:26:05.348 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:72 - - registering field: RADIO_GROUP [class com.cognifide.qa.bb.aem.core.component.dialog.dialogfields.DefaultRadioGroup]
+14:26:05.349 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:72 - - registering field: RICHTEXT [class com.cognifide.qa.bb.aem.core.component.dialog.dialogfields.DefaultRichText]
+14:26:05.351 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:72 - - registering field: RTE_OPTIONS [class com.cognifide.qa.bb.aem.core.component.dialog.dialogfields.rte.RteOption]
+14:26:05.354 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:72 - - registering field: RTE_OPTIONS_HYPERLINK [class com.cognifide.qa.bb.aem.core.component.dialog.dialogfields.rte.Hyperlink]
+14:26:05.356 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:72 - - registering field: RTE_OPTIONS_LISTS [class com.cognifide.qa.bb.aem.core.component.dialog.dialogfields.rte.Lists]
+14:26:05.358 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:72 - - registering field: RTE_OPTIONS_PARAGRAPH_FORMATS [class com.cognifide.qa.bb.aem.core.component.dialog.dialogfields.rte.ParagraphFormats]
+14:26:05.368 ERROR com.cognifide.qa.bb.modules.BobcatRunModule:54 - Error when binding module: bobcat.gradle.BOBCAT.AEM.BDD.test
+java.lang.ClassNotFoundException: bobcat.gradle.BOBCAT.AEM.BDD.test
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.cognifide.qa.bb.modules.BobcatRunModule.installFromName(BobcatRunModule.java:52)
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1382)
+	at java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:580)
+	at com.cognifide.qa.bb.modules.BobcatRunModule.configure(BobcatRunModule.java:47)
+	at com.google.inject.AbstractModule.configure(AbstractModule.java:61)
+	at com.google.inject.spi.Elements$RecordingBinder.install(Elements.java:344)
+	at com.google.inject.spi.Elements.getElements(Elements.java:103)
+	at com.google.inject.internal.InjectorShell$Builder.build(InjectorShell.java:137)
+	at com.google.inject.internal.InternalInjectorCreator.build(InternalInjectorCreator.java:103)
+	at com.google.inject.Guice.createInjector(Guice.java:87)
+	at com.google.inject.Guice.createInjector(Guice.java:69)
+	at com.google.inject.Guice.createInjector(Guice.java:59)
+	at bobcat.gradle.BOBCAT.AEM.BDD.CucumberInjectorSource.getInjector(CucumberInjectorSource.java:15)
+	at cucumber.runtime.java.guice.impl.GuiceFactory.<init>(GuiceFactory.java:16)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at cucumber.runtime.Reflections.newInstance(Reflections.java:48)
+	at cucumber.runtime.Reflections.instantiateSubclasses(Reflections.java:36)
+	at cucumber.runtime.Reflections.instantiateExactlyOneSubclass(Reflections.java:18)
+	at cucumber.runtime.java.ObjectFactoryLoader.loadObjectFactory(ObjectFactoryLoader.java:37)
+	at cucumber.runtime.java.JavaBackend.<init>(JavaBackend.java:67)
+	at cucumber.runtime.java.JavaBackend.<init>(JavaBackend.java:63)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at cucumber.runtime.Reflections.newInstance(Reflections.java:48)
+	at cucumber.runtime.Reflections.instantiateSubclasses(Reflections.java:36)
+	at cucumber.runtime.BackendModuleBackendSupplier.loadBackends(BackendModuleBackendSupplier.java:52)
+	at cucumber.runtime.BackendModuleBackendSupplier.get(BackendModuleBackendSupplier.java:39)
+	at cucumber.runner.ThreadLocalRunnerSupplier.createRunner(ThreadLocalRunnerSupplier.java:42)
+	at cucumber.runner.ThreadLocalRunnerSupplier.access$000(ThreadLocalRunnerSupplier.java:13)
+	at cucumber.runner.ThreadLocalRunnerSupplier$1.initialValue(ThreadLocalRunnerSupplier.java:22)
+	at cucumber.runner.ThreadLocalRunnerSupplier$1.initialValue(ThreadLocalRunnerSupplier.java:19)
+	at java.lang.ThreadLocal.setInitialValue(ThreadLocal.java:180)
+	at java.lang.ThreadLocal.get(ThreadLocal.java:170)
+	at cucumber.runner.ThreadLocalRunnerSupplier.get(ThreadLocalRunnerSupplier.java:38)
+	at cucumber.api.junit.Cucumber.<init>(Cucumber.java:106)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.junit.internal.builders.AnnotatedBuilder.buildRunner(AnnotatedBuilder.java:104)
+	at org.junit.internal.builders.AnnotatedBuilder.runnerForClass(AnnotatedBuilder.java:86)
+	at org.junit.runners.model.RunnerBuilder.safeRunnerForClass(RunnerBuilder.java:59)
+	at org.junit.internal.builders.AllDefaultPossibilitiesBuilder.runnerForClass(AllDefaultPossibilitiesBuilder.java:26)
+	at org.junit.runners.model.RunnerBuilder.safeRunnerForClass(RunnerBuilder.java:59)
+	at org.junit.internal.requests.ClassRequest.getRunner(ClassRequest.java:33)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:250)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+14:26:57.838 DEBUG com.cognifide.qa.bb.wait.BobcatWait:126 - value to contain "is-selected". Current value: "null" condition has not been met before timeout 
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for value to contain "is-selected". Current value: "null" (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.cognifide.qa.bb.wait.BobcatWait.until(BobcatWait.java:108)
+	at com.cognifide.qa.bb.wait.BobcatWait.isConditionMet(BobcatWait.java:124)
+	at com.cognifide.qa.bb.aem.core.component.GlobalBarImpl.isInPreviewMode(GlobalBarImpl.java:80)
+	at com.cognifide.qa.bb.aem.core.component.GlobalBarImpl$$EnhancerByGuice$$2a6ab01c.CGLIB$isInPreviewMode$3(<generated>)
+	at com.cognifide.qa.bb.aem.core.component.GlobalBarImpl$$EnhancerByGuice$$2a6ab01c$$FastClassByGuice$$1b4e0556.invoke(<generated>)
+	at com.google.inject.internal.cglib.proxy.$MethodProxy.invokeSuper(MethodProxy.java:228)
+	at com.google.inject.internal.InterceptorStackCallback$InterceptedMethodInvocation.proceed(InterceptorStackCallback.java:76)
+	at com.cognifide.qa.bb.frame.FrameAspect.switchFrameAndProceed(FrameAspect.java:70)
+	at com.cognifide.qa.bb.frame.FrameAspect.invoke(FrameAspect.java:58)
+	at com.google.inject.internal.InterceptorStackCallback$InterceptedMethodInvocation.proceed(InterceptorStackCallback.java:78)
+	at com.google.inject.internal.InterceptorStackCallback.intercept(InterceptorStackCallback.java:54)
+	at com.cognifide.qa.bb.aem.core.component.GlobalBarImpl$$EnhancerByGuice$$2a6ab01c.isInPreviewMode(<generated>)
+	at com.cognifide.qa.bb.aem.core.component.GlobalBarImpl.switchToPreviewMode(GlobalBarImpl.java:72)
+	at com.cognifide.qa.bb.aem.core.component.GlobalBarImpl$$EnhancerByGuice$$2a6ab01c.CGLIB$switchToPreviewMode$0(<generated>)
+	at com.cognifide.qa.bb.aem.core.component.GlobalBarImpl$$EnhancerByGuice$$2a6ab01c$$FastClassByGuice$$1b4e0556.invoke(<generated>)
+	at com.google.inject.internal.cglib.proxy.$MethodProxy.invokeSuper(MethodProxy.java:228)
+	at com.google.inject.internal.InterceptorStackCallback$InterceptedMethodInvocation.proceed(InterceptorStackCallback.java:76)
+	at com.cognifide.qa.bb.frame.FrameAspect.switchFrameAndProceed(FrameAspect.java:70)
+	at com.cognifide.qa.bb.frame.FrameAspect.invoke(FrameAspect.java:58)
+	at com.google.inject.internal.InterceptorStackCallback$InterceptedMethodInvocation.proceed(InterceptorStackCallback.java:78)
+	at com.google.inject.internal.InterceptorStackCallback.intercept(InterceptorStackCallback.java:54)
+	at com.cognifide.qa.bb.aem.core.component.GlobalBarImpl$$EnhancerByGuice$$2a6ab01c.switchToPreviewMode(<generated>)
+	at com.cognifide.qa.bb.aem.core.pages.AemAuthorPage.getContent(AemAuthorPage.java:76)
+	at bobcat.gradle.BOBCAT.AEM.BDD.pages.TestPage$$EnhancerByGuice$$da0d0c7c.CGLIB$getContent$4(<generated>)
+	at bobcat.gradle.BOBCAT.AEM.BDD.pages.TestPage$$EnhancerByGuice$$da0d0c7c$$FastClassByGuice$$299de743.invoke(<generated>)
+	at com.google.inject.internal.cglib.proxy.$MethodProxy.invokeSuper(MethodProxy.java:228)
+	at com.google.inject.internal.InterceptorStackCallback$InterceptedMethodInvocation.proceed(InterceptorStackCallback.java:76)
+	at com.cognifide.qa.bb.frame.FrameAspect.switchFrameAndProceed(FrameAspect.java:70)
+	at com.cognifide.qa.bb.frame.FrameAspect.invoke(FrameAspect.java:58)
+	at com.google.inject.internal.InterceptorStackCallback$InterceptedMethodInvocation.proceed(InterceptorStackCallback.java:78)
+	at com.google.inject.internal.InterceptorStackCallback.intercept(InterceptorStackCallback.java:54)
+	at bobcat.gradle.BOBCAT.AEM.BDD.pages.TestPage$$EnhancerByGuice$$da0d0c7c.getContent(<generated>)
+	at bobcat.gradle.BOBCAT.AEM.BDD.steps.AuthorizationSteps.The_title_component_html_should_match(AuthorizationSteps.java:61)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:26)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:20)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:57)
+	at cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:50)
+	at cucumber.runner.TestStep.executeStep(TestStep.java:63)
+	at cucumber.runner.TestStep.run(TestStep.java:49)
+	at cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43)
+	at cucumber.runner.TestCase.run(TestCase.java:45)
+	at cucumber.runner.Runner.runPickle(Runner.java:40)
+	at cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:122)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:64)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:131)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"button[data-layer='Preview']"}
+  (Session info: chrome=76.0.3809.100)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.0', revision: '2ecb7d9a', time: '2018-10-31T20:09:30'
+System info: host: 'PRFT-10712', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.40.565498 (ea082db3280dd6..., userDataDir: C:\Users\JON~1.TRA\AppData\...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 76.0.3809.100, webStorageEnabled: true}
+Session ID: 9f1d84f634b3be2802b6f337fac00485
+*** Element info: {Using=css selector, value=button[data-layer='Preview']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy40.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy42.getAttribute(Unknown Source)
+	at com.cognifide.qa.bb.webelement.BobcatWebElement.getAttribute(BobcatWebElement.java:104)
+	at org.openqa.selenium.support.ui.ExpectedConditions.getAttributeOrCssValue(ExpectedConditions.java:1139)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$38.apply(ExpectedConditions.java:1084)
+	at org.openqa.selenium.support.ui.ExpectedConditions$38.apply(ExpectedConditions.java:1079)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 78 common frames omitted
+14:32:24.740 DEBUG com.cognifide.qa.bb.aem.core.modules.Aem65FullModule:39 - Configuring Bobcat module: Aem65FullModule
+14:32:24.889 DEBUG com.cognifide.qa.bb.aem.core.modules.AemLoginModule:42 - Configuring Bobcat module: AemLoginModule
+14:32:24.909 DEBUG com.cognifide.qa.bb.aem.core.modules.AemSitesAdminModule:47 - Configuring Bobcat module: AemSitesAdminModule
+14:32:24.919 DEBUG com.cognifide.qa.bb.aem.core.modules.SlingPageActionsModule:40 - Configuring Bobcat module: SlingPageActionsModule
+14:32:24.926 DEBUG com.cognifide.qa.bb.aem.core.modules.AemComponentModule:51 - Configuring Bobcat module: AemComponentModule
+14:32:24.948 DEBUG com.cognifide.qa.bb.aem.core.modules.AemSidePanelModule:39 - Configuring Bobcat module: AemSidePanelModule
+14:32:24.952 DEBUG com.cognifide.qa.bb.aem.core.modules.AemPageModule:40 - Configuring Bobcat module: AemPageModule
+14:32:24.955 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.DialogFieldsModule:54 - Configuring Bobcat module: DialogFieldsModule
+14:32:24.971 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:49 - Configuring Bobcat module: FieldsRegistryModule
+14:32:24.972 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:51 - Registering dialog fields...
+14:32:24.975 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:72 - - registering field: CHECKBOX [class com.cognifide.qa.bb.aem.core.component.dialog.dialogfields.DefaultCheckbox]
+14:32:24.975 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:72 - - registering field: TEXTFIELD [class com.cognifide.qa.bb.aem.core.component.dialog.dialogfields.DefaultTextfield]
+14:32:24.977 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:72 - - registering field: IMAGE [class com.cognifide.qa.bb.aem.core.component.dialog.dialogfields.DefaultImage]
+14:32:24.979 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:72 - - registering field: PATHBROWSER [class com.cognifide.qa.bb.aem.core.component.dialog.dialogfields.DefaultPathBrowser]
+14:32:24.980 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:72 - - registering field: SELECT [class com.cognifide.qa.bb.aem.core.component.dialog.dialogfields.DefaultSelect]
+14:32:24.982 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:72 - - registering field: MULTIFIELD [class com.cognifide.qa.bb.aem.core.component.dialog.dialogfields.DefaultMultifield]
+14:32:24.983 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:72 - - registering field: MULTIFIELD_ITEM [class com.cognifide.qa.bb.aem.core.component.dialog.dialogfields.DefaultMultifieldItem]
+14:32:24.984 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:72 - - registering field: RADIO_GROUP [class com.cognifide.qa.bb.aem.core.component.dialog.dialogfields.DefaultRadioGroup]
+14:32:24.985 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:72 - - registering field: RICHTEXT [class com.cognifide.qa.bb.aem.core.component.dialog.dialogfields.DefaultRichText]
+14:32:24.987 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:72 - - registering field: RTE_OPTIONS [class com.cognifide.qa.bb.aem.core.component.dialog.dialogfields.rte.RteOption]
+14:32:24.990 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:72 - - registering field: RTE_OPTIONS_HYPERLINK [class com.cognifide.qa.bb.aem.core.component.dialog.dialogfields.rte.Hyperlink]
+14:32:24.992 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:72 - - registering field: RTE_OPTIONS_LISTS [class com.cognifide.qa.bb.aem.core.component.dialog.dialogfields.rte.Lists]
+14:32:24.995 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:72 - - registering field: RTE_OPTIONS_PARAGRAPH_FORMATS [class com.cognifide.qa.bb.aem.core.component.dialog.dialogfields.rte.ParagraphFormats]
+14:32:25.003 ERROR com.cognifide.qa.bb.modules.BobcatRunModule:54 - Error when binding module: bobcat.gradle.BOBCAT.AEM.BDD.test
+java.lang.ClassNotFoundException: bobcat.gradle.BOBCAT.AEM.BDD.test
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.cognifide.qa.bb.modules.BobcatRunModule.installFromName(BobcatRunModule.java:52)
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1382)
+	at java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:580)
+	at com.cognifide.qa.bb.modules.BobcatRunModule.configure(BobcatRunModule.java:47)
+	at com.google.inject.AbstractModule.configure(AbstractModule.java:61)
+	at com.google.inject.spi.Elements$RecordingBinder.install(Elements.java:344)
+	at com.google.inject.spi.Elements.getElements(Elements.java:103)
+	at com.google.inject.internal.InjectorShell$Builder.build(InjectorShell.java:137)
+	at com.google.inject.internal.InternalInjectorCreator.build(InternalInjectorCreator.java:103)
+	at com.google.inject.Guice.createInjector(Guice.java:87)
+	at com.google.inject.Guice.createInjector(Guice.java:69)
+	at com.google.inject.Guice.createInjector(Guice.java:59)
+	at bobcat.gradle.BOBCAT.AEM.BDD.CucumberInjectorSource.getInjector(CucumberInjectorSource.java:15)
+	at cucumber.runtime.java.guice.impl.GuiceFactory.<init>(GuiceFactory.java:16)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at cucumber.runtime.Reflections.newInstance(Reflections.java:48)
+	at cucumber.runtime.Reflections.instantiateSubclasses(Reflections.java:36)
+	at cucumber.runtime.Reflections.instantiateExactlyOneSubclass(Reflections.java:18)
+	at cucumber.runtime.java.ObjectFactoryLoader.loadObjectFactory(ObjectFactoryLoader.java:37)
+	at cucumber.runtime.java.JavaBackend.<init>(JavaBackend.java:67)
+	at cucumber.runtime.java.JavaBackend.<init>(JavaBackend.java:63)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at cucumber.runtime.Reflections.newInstance(Reflections.java:48)
+	at cucumber.runtime.Reflections.instantiateSubclasses(Reflections.java:36)
+	at cucumber.runtime.BackendModuleBackendSupplier.loadBackends(BackendModuleBackendSupplier.java:52)
+	at cucumber.runtime.BackendModuleBackendSupplier.get(BackendModuleBackendSupplier.java:39)
+	at cucumber.runner.ThreadLocalRunnerSupplier.createRunner(ThreadLocalRunnerSupplier.java:42)
+	at cucumber.runner.ThreadLocalRunnerSupplier.access$000(ThreadLocalRunnerSupplier.java:13)
+	at cucumber.runner.ThreadLocalRunnerSupplier$1.initialValue(ThreadLocalRunnerSupplier.java:22)
+	at cucumber.runner.ThreadLocalRunnerSupplier$1.initialValue(ThreadLocalRunnerSupplier.java:19)
+	at java.lang.ThreadLocal.setInitialValue(ThreadLocal.java:180)
+	at java.lang.ThreadLocal.get(ThreadLocal.java:170)
+	at cucumber.runner.ThreadLocalRunnerSupplier.get(ThreadLocalRunnerSupplier.java:38)
+	at cucumber.api.junit.Cucumber.<init>(Cucumber.java:106)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.junit.internal.builders.AnnotatedBuilder.buildRunner(AnnotatedBuilder.java:104)
+	at org.junit.internal.builders.AnnotatedBuilder.runnerForClass(AnnotatedBuilder.java:86)
+	at org.junit.runners.model.RunnerBuilder.safeRunnerForClass(RunnerBuilder.java:59)
+	at org.junit.internal.builders.AllDefaultPossibilitiesBuilder.runnerForClass(AllDefaultPossibilitiesBuilder.java:26)
+	at org.junit.runners.model.RunnerBuilder.safeRunnerForClass(RunnerBuilder.java:59)
+	at org.junit.internal.requests.ClassRequest.getRunner(ClassRequest.java:33)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:250)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+14:33:06.513 DEBUG com.cognifide.qa.bb.wait.BobcatWait:126 - value to contain "is-selected". Current value: "null" condition has not been met before timeout 
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for value to contain "is-selected". Current value: "null" (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.cognifide.qa.bb.wait.BobcatWait.until(BobcatWait.java:108)
+	at com.cognifide.qa.bb.wait.BobcatWait.isConditionMet(BobcatWait.java:124)
+	at com.cognifide.qa.bb.aem.core.component.GlobalBarImpl.isInPreviewMode(GlobalBarImpl.java:80)
+	at com.cognifide.qa.bb.aem.core.component.GlobalBarImpl$$EnhancerByGuice$$ceab9232.CGLIB$isInPreviewMode$3(<generated>)
+	at com.cognifide.qa.bb.aem.core.component.GlobalBarImpl$$EnhancerByGuice$$ceab9232$$FastClassByGuice$$1a5c6797.invoke(<generated>)
+	at com.google.inject.internal.cglib.proxy.$MethodProxy.invokeSuper(MethodProxy.java:228)
+	at com.google.inject.internal.InterceptorStackCallback$InterceptedMethodInvocation.proceed(InterceptorStackCallback.java:76)
+	at com.cognifide.qa.bb.frame.FrameAspect.switchFrameAndProceed(FrameAspect.java:70)
+	at com.cognifide.qa.bb.frame.FrameAspect.invoke(FrameAspect.java:58)
+	at com.google.inject.internal.InterceptorStackCallback$InterceptedMethodInvocation.proceed(InterceptorStackCallback.java:78)
+	at com.google.inject.internal.InterceptorStackCallback.intercept(InterceptorStackCallback.java:54)
+	at com.cognifide.qa.bb.aem.core.component.GlobalBarImpl$$EnhancerByGuice$$ceab9232.isInPreviewMode(<generated>)
+	at com.cognifide.qa.bb.aem.core.component.GlobalBarImpl.switchToPreviewMode(GlobalBarImpl.java:72)
+	at com.cognifide.qa.bb.aem.core.component.GlobalBarImpl$$EnhancerByGuice$$ceab9232.CGLIB$switchToPreviewMode$0(<generated>)
+	at com.cognifide.qa.bb.aem.core.component.GlobalBarImpl$$EnhancerByGuice$$ceab9232$$FastClassByGuice$$1a5c6797.invoke(<generated>)
+	at com.google.inject.internal.cglib.proxy.$MethodProxy.invokeSuper(MethodProxy.java:228)
+	at com.google.inject.internal.InterceptorStackCallback$InterceptedMethodInvocation.proceed(InterceptorStackCallback.java:76)
+	at com.cognifide.qa.bb.frame.FrameAspect.switchFrameAndProceed(FrameAspect.java:70)
+	at com.cognifide.qa.bb.frame.FrameAspect.invoke(FrameAspect.java:58)
+	at com.google.inject.internal.InterceptorStackCallback$InterceptedMethodInvocation.proceed(InterceptorStackCallback.java:78)
+	at com.google.inject.internal.InterceptorStackCallback.intercept(InterceptorStackCallback.java:54)
+	at com.cognifide.qa.bb.aem.core.component.GlobalBarImpl$$EnhancerByGuice$$ceab9232.switchToPreviewMode(<generated>)
+	at com.cognifide.qa.bb.aem.core.pages.AemAuthorPage.getContent(AemAuthorPage.java:76)
+	at bobcat.gradle.BOBCAT.AEM.BDD.pages.TestPage$$EnhancerByGuice$$da0d0c7c.CGLIB$getContent$4(<generated>)
+	at bobcat.gradle.BOBCAT.AEM.BDD.pages.TestPage$$EnhancerByGuice$$da0d0c7c$$FastClassByGuice$$299de743.invoke(<generated>)
+	at com.google.inject.internal.cglib.proxy.$MethodProxy.invokeSuper(MethodProxy.java:228)
+	at com.google.inject.internal.InterceptorStackCallback$InterceptedMethodInvocation.proceed(InterceptorStackCallback.java:76)
+	at com.cognifide.qa.bb.frame.FrameAspect.switchFrameAndProceed(FrameAspect.java:70)
+	at com.cognifide.qa.bb.frame.FrameAspect.invoke(FrameAspect.java:58)
+	at com.google.inject.internal.InterceptorStackCallback$InterceptedMethodInvocation.proceed(InterceptorStackCallback.java:78)
+	at com.google.inject.internal.InterceptorStackCallback.intercept(InterceptorStackCallback.java:54)
+	at bobcat.gradle.BOBCAT.AEM.BDD.pages.TestPage$$EnhancerByGuice$$da0d0c7c.getContent(<generated>)
+	at bobcat.gradle.BOBCAT.AEM.BDD.steps.AuthorizationSteps.The_title_component_html_should_match(AuthorizationSteps.java:61)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:26)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:20)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:57)
+	at cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:50)
+	at cucumber.runner.TestStep.executeStep(TestStep.java:63)
+	at cucumber.runner.TestStep.run(TestStep.java:49)
+	at cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43)
+	at cucumber.runner.TestCase.run(TestCase.java:45)
+	at cucumber.runner.Runner.runPickle(Runner.java:40)
+	at cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:122)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:64)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:131)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"button[data-layer='Preview']"}
+  (Session info: chrome=76.0.3809.100)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.0', revision: '2ecb7d9a', time: '2018-10-31T20:09:30'
+System info: host: 'PRFT-10712', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.40.565498 (ea082db3280dd6..., userDataDir: C:\Users\JON~1.TRA\AppData\...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 76.0.3809.100, webStorageEnabled: true}
+Session ID: 86890ceeb1f7a9f4848592e79752116c
+*** Element info: {Using=css selector, value=button[data-layer='Preview']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy40.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy42.getAttribute(Unknown Source)
+	at com.cognifide.qa.bb.webelement.BobcatWebElement.getAttribute(BobcatWebElement.java:104)
+	at org.openqa.selenium.support.ui.ExpectedConditions.getAttributeOrCssValue(ExpectedConditions.java:1139)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$38.apply(ExpectedConditions.java:1084)
+	at org.openqa.selenium.support.ui.ExpectedConditions$38.apply(ExpectedConditions.java:1079)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 78 common frames omitted
+14:35:10.218 DEBUG com.cognifide.qa.bb.aem.core.modules.Aem65FullModule:39 - Configuring Bobcat module: Aem65FullModule
+14:35:10.357 DEBUG com.cognifide.qa.bb.aem.core.modules.AemLoginModule:42 - Configuring Bobcat module: AemLoginModule
+14:35:10.373 DEBUG com.cognifide.qa.bb.aem.core.modules.AemSitesAdminModule:47 - Configuring Bobcat module: AemSitesAdminModule
+14:35:10.396 DEBUG com.cognifide.qa.bb.aem.core.modules.SlingPageActionsModule:40 - Configuring Bobcat module: SlingPageActionsModule
+14:35:10.404 DEBUG com.cognifide.qa.bb.aem.core.modules.AemComponentModule:51 - Configuring Bobcat module: AemComponentModule
+14:35:10.435 DEBUG com.cognifide.qa.bb.aem.core.modules.AemSidePanelModule:39 - Configuring Bobcat module: AemSidePanelModule
+14:35:10.441 DEBUG com.cognifide.qa.bb.aem.core.modules.AemPageModule:40 - Configuring Bobcat module: AemPageModule
+14:35:10.445 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.DialogFieldsModule:54 - Configuring Bobcat module: DialogFieldsModule
+14:35:10.462 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:49 - Configuring Bobcat module: FieldsRegistryModule
+14:35:10.462 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:51 - Registering dialog fields...
+14:35:10.466 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:72 - - registering field: CHECKBOX [class com.cognifide.qa.bb.aem.core.component.dialog.dialogfields.DefaultCheckbox]
+14:35:10.467 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:72 - - registering field: TEXTFIELD [class com.cognifide.qa.bb.aem.core.component.dialog.dialogfields.DefaultTextfield]
+14:35:10.469 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:72 - - registering field: IMAGE [class com.cognifide.qa.bb.aem.core.component.dialog.dialogfields.DefaultImage]
+14:35:10.470 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:72 - - registering field: PATHBROWSER [class com.cognifide.qa.bb.aem.core.component.dialog.dialogfields.DefaultPathBrowser]
+14:35:10.471 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:72 - - registering field: SELECT [class com.cognifide.qa.bb.aem.core.component.dialog.dialogfields.DefaultSelect]
+14:35:10.473 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:72 - - registering field: MULTIFIELD [class com.cognifide.qa.bb.aem.core.component.dialog.dialogfields.DefaultMultifield]
+14:35:10.474 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:72 - - registering field: MULTIFIELD_ITEM [class com.cognifide.qa.bb.aem.core.component.dialog.dialogfields.DefaultMultifieldItem]
+14:35:10.475 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:72 - - registering field: RADIO_GROUP [class com.cognifide.qa.bb.aem.core.component.dialog.dialogfields.DefaultRadioGroup]
+14:35:10.477 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:72 - - registering field: RICHTEXT [class com.cognifide.qa.bb.aem.core.component.dialog.dialogfields.DefaultRichText]
+14:35:10.478 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:72 - - registering field: RTE_OPTIONS [class com.cognifide.qa.bb.aem.core.component.dialog.dialogfields.rte.RteOption]
+14:35:10.479 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:72 - - registering field: RTE_OPTIONS_HYPERLINK [class com.cognifide.qa.bb.aem.core.component.dialog.dialogfields.rte.Hyperlink]
+14:35:10.481 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:72 - - registering field: RTE_OPTIONS_LISTS [class com.cognifide.qa.bb.aem.core.component.dialog.dialogfields.rte.Lists]
+14:35:10.483 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:72 - - registering field: RTE_OPTIONS_PARAGRAPH_FORMATS [class com.cognifide.qa.bb.aem.core.component.dialog.dialogfields.rte.ParagraphFormats]
+14:35:51.543 DEBUG com.cognifide.qa.bb.wait.BobcatWait:126 - value to contain "is-selected". Current value: "null" condition has not been met before timeout 
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for value to contain "is-selected". Current value: "null" (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.cognifide.qa.bb.wait.BobcatWait.until(BobcatWait.java:108)
+	at com.cognifide.qa.bb.wait.BobcatWait.isConditionMet(BobcatWait.java:124)
+	at com.cognifide.qa.bb.aem.core.component.GlobalBarImpl.isInPreviewMode(GlobalBarImpl.java:80)
+	at com.cognifide.qa.bb.aem.core.component.GlobalBarImpl$$EnhancerByGuice$$e104fe94.CGLIB$isInPreviewMode$4(<generated>)
+	at com.cognifide.qa.bb.aem.core.component.GlobalBarImpl$$EnhancerByGuice$$e104fe94$$FastClassByGuice$$d54a3d66.invoke(<generated>)
+	at com.google.inject.internal.cglib.proxy.$MethodProxy.invokeSuper(MethodProxy.java:228)
+	at com.google.inject.internal.InterceptorStackCallback$InterceptedMethodInvocation.proceed(InterceptorStackCallback.java:76)
+	at com.cognifide.qa.bb.frame.FrameAspect.switchFrameAndProceed(FrameAspect.java:70)
+	at com.cognifide.qa.bb.frame.FrameAspect.invoke(FrameAspect.java:58)
+	at com.google.inject.internal.InterceptorStackCallback$InterceptedMethodInvocation.proceed(InterceptorStackCallback.java:78)
+	at com.google.inject.internal.InterceptorStackCallback.intercept(InterceptorStackCallback.java:54)
+	at com.cognifide.qa.bb.aem.core.component.GlobalBarImpl$$EnhancerByGuice$$e104fe94.isInPreviewMode(<generated>)
+	at com.cognifide.qa.bb.aem.core.component.GlobalBarImpl.switchToPreviewMode(GlobalBarImpl.java:72)
+	at com.cognifide.qa.bb.aem.core.component.GlobalBarImpl$$EnhancerByGuice$$e104fe94.CGLIB$switchToPreviewMode$0(<generated>)
+	at com.cognifide.qa.bb.aem.core.component.GlobalBarImpl$$EnhancerByGuice$$e104fe94$$FastClassByGuice$$d54a3d66.invoke(<generated>)
+	at com.google.inject.internal.cglib.proxy.$MethodProxy.invokeSuper(MethodProxy.java:228)
+	at com.google.inject.internal.InterceptorStackCallback$InterceptedMethodInvocation.proceed(InterceptorStackCallback.java:76)
+	at com.cognifide.qa.bb.frame.FrameAspect.switchFrameAndProceed(FrameAspect.java:70)
+	at com.cognifide.qa.bb.frame.FrameAspect.invoke(FrameAspect.java:58)
+	at com.google.inject.internal.InterceptorStackCallback$InterceptedMethodInvocation.proceed(InterceptorStackCallback.java:78)
+	at com.google.inject.internal.InterceptorStackCallback.intercept(InterceptorStackCallback.java:54)
+	at com.cognifide.qa.bb.aem.core.component.GlobalBarImpl$$EnhancerByGuice$$e104fe94.switchToPreviewMode(<generated>)
+	at com.cognifide.qa.bb.aem.core.pages.AemAuthorPage.getContent(AemAuthorPage.java:76)
+	at bobcat.gradle.BOBCAT.AEM.BDD.pages.TestPage$$EnhancerByGuice$$e530e378.CGLIB$getContent$4(<generated>)
+	at bobcat.gradle.BOBCAT.AEM.BDD.pages.TestPage$$EnhancerByGuice$$e530e378$$FastClassByGuice$$7c460bef.invoke(<generated>)
+	at com.google.inject.internal.cglib.proxy.$MethodProxy.invokeSuper(MethodProxy.java:228)
+	at com.google.inject.internal.InterceptorStackCallback$InterceptedMethodInvocation.proceed(InterceptorStackCallback.java:76)
+	at com.cognifide.qa.bb.frame.FrameAspect.switchFrameAndProceed(FrameAspect.java:70)
+	at com.cognifide.qa.bb.frame.FrameAspect.invoke(FrameAspect.java:58)
+	at com.google.inject.internal.InterceptorStackCallback$InterceptedMethodInvocation.proceed(InterceptorStackCallback.java:78)
+	at com.google.inject.internal.InterceptorStackCallback.intercept(InterceptorStackCallback.java:54)
+	at bobcat.gradle.BOBCAT.AEM.BDD.pages.TestPage$$EnhancerByGuice$$e530e378.getContent(<generated>)
+	at bobcat.gradle.BOBCAT.AEM.BDD.steps.AuthorizationSteps.The_title_component_html_should_match(AuthorizationSteps.java:61)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:26)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:20)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:57)
+	at cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:50)
+	at cucumber.runner.TestStep.executeStep(TestStep.java:63)
+	at cucumber.runner.TestStep.run(TestStep.java:49)
+	at cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43)
+	at cucumber.runner.TestCase.run(TestCase.java:45)
+	at cucumber.runner.Runner.runPickle(Runner.java:40)
+	at cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:122)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:64)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:131)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"button[data-layer='Preview']"}
+  (Session info: chrome=76.0.3809.100)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.0', revision: '2ecb7d9a', time: '2018-10-31T20:09:30'
+System info: host: 'PRFT-10712', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.40.565498 (ea082db3280dd6..., userDataDir: C:\Users\JON~1.TRA\AppData\...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 76.0.3809.100, webStorageEnabled: true}
+Session ID: 73516ee1fadc7e284b09658ccb581dde
+*** Element info: {Using=css selector, value=button[data-layer='Preview']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy40.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy42.getAttribute(Unknown Source)
+	at com.cognifide.qa.bb.webelement.BobcatWebElement.getAttribute(BobcatWebElement.java:104)
+	at org.openqa.selenium.support.ui.ExpectedConditions.getAttributeOrCssValue(ExpectedConditions.java:1139)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$38.apply(ExpectedConditions.java:1084)
+	at org.openqa.selenium.support.ui.ExpectedConditions$38.apply(ExpectedConditions.java:1079)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 78 common frames omitted
+14:37:21.874 DEBUG com.cognifide.qa.bb.aem.core.modules.Aem65FullModule:39 - Configuring Bobcat module: Aem65FullModule
+14:37:22.019 DEBUG com.cognifide.qa.bb.aem.core.modules.AemLoginModule:42 - Configuring Bobcat module: AemLoginModule
+14:37:22.036 DEBUG com.cognifide.qa.bb.aem.core.modules.AemSitesAdminModule:47 - Configuring Bobcat module: AemSitesAdminModule
+14:37:22.048 DEBUG com.cognifide.qa.bb.aem.core.modules.SlingPageActionsModule:40 - Configuring Bobcat module: SlingPageActionsModule
+14:37:22.055 DEBUG com.cognifide.qa.bb.aem.core.modules.AemComponentModule:51 - Configuring Bobcat module: AemComponentModule
+14:37:22.078 DEBUG com.cognifide.qa.bb.aem.core.modules.AemSidePanelModule:39 - Configuring Bobcat module: AemSidePanelModule
+14:37:22.084 DEBUG com.cognifide.qa.bb.aem.core.modules.AemPageModule:40 - Configuring Bobcat module: AemPageModule
+14:37:22.088 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.DialogFieldsModule:54 - Configuring Bobcat module: DialogFieldsModule
+14:37:22.106 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:49 - Configuring Bobcat module: FieldsRegistryModule
+14:37:22.107 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:51 - Registering dialog fields...
+14:37:22.110 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:72 - - registering field: CHECKBOX [class com.cognifide.qa.bb.aem.core.component.dialog.dialogfields.DefaultCheckbox]
+14:37:22.111 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:72 - - registering field: TEXTFIELD [class com.cognifide.qa.bb.aem.core.component.dialog.dialogfields.DefaultTextfield]
+14:37:22.112 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:72 - - registering field: IMAGE [class com.cognifide.qa.bb.aem.core.component.dialog.dialogfields.DefaultImage]
+14:37:22.114 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:72 - - registering field: PATHBROWSER [class com.cognifide.qa.bb.aem.core.component.dialog.dialogfields.DefaultPathBrowser]
+14:37:22.115 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:72 - - registering field: SELECT [class com.cognifide.qa.bb.aem.core.component.dialog.dialogfields.DefaultSelect]
+14:37:22.118 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:72 - - registering field: MULTIFIELD [class com.cognifide.qa.bb.aem.core.component.dialog.dialogfields.DefaultMultifield]
+14:37:22.120 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:72 - - registering field: MULTIFIELD_ITEM [class com.cognifide.qa.bb.aem.core.component.dialog.dialogfields.DefaultMultifieldItem]
+14:37:22.121 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:72 - - registering field: RADIO_GROUP [class com.cognifide.qa.bb.aem.core.component.dialog.dialogfields.DefaultRadioGroup]
+14:37:22.123 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:72 - - registering field: RICHTEXT [class com.cognifide.qa.bb.aem.core.component.dialog.dialogfields.DefaultRichText]
+14:37:22.125 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:72 - - registering field: RTE_OPTIONS [class com.cognifide.qa.bb.aem.core.component.dialog.dialogfields.rte.RteOption]
+14:37:22.127 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:72 - - registering field: RTE_OPTIONS_HYPERLINK [class com.cognifide.qa.bb.aem.core.component.dialog.dialogfields.rte.Hyperlink]
+14:37:22.130 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:72 - - registering field: RTE_OPTIONS_LISTS [class com.cognifide.qa.bb.aem.core.component.dialog.dialogfields.rte.Lists]
+14:37:22.133 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:72 - - registering field: RTE_OPTIONS_PARAGRAPH_FORMATS [class com.cognifide.qa.bb.aem.core.component.dialog.dialogfields.rte.ParagraphFormats]
+14:38:13.433 DEBUG com.cognifide.qa.bb.wait.BobcatWait:126 - value to contain "is-selected". Current value: "null" condition has not been met before timeout 
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for value to contain "is-selected". Current value: "null" (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.cognifide.qa.bb.wait.BobcatWait.until(BobcatWait.java:108)
+	at com.cognifide.qa.bb.wait.BobcatWait.isConditionMet(BobcatWait.java:124)
+	at com.cognifide.qa.bb.aem.core.component.GlobalBarImpl.isInPreviewMode(GlobalBarImpl.java:80)
+	at com.cognifide.qa.bb.aem.core.component.GlobalBarImpl$$EnhancerByGuice$$e104fe94.CGLIB$isInPreviewMode$4(<generated>)
+	at com.cognifide.qa.bb.aem.core.component.GlobalBarImpl$$EnhancerByGuice$$e104fe94$$FastClassByGuice$$d54a3d66.invoke(<generated>)
+	at com.google.inject.internal.cglib.proxy.$MethodProxy.invokeSuper(MethodProxy.java:228)
+	at com.google.inject.internal.InterceptorStackCallback$InterceptedMethodInvocation.proceed(InterceptorStackCallback.java:76)
+	at com.cognifide.qa.bb.frame.FrameAspect.switchFrameAndProceed(FrameAspect.java:70)
+	at com.cognifide.qa.bb.frame.FrameAspect.invoke(FrameAspect.java:58)
+	at com.google.inject.internal.InterceptorStackCallback$InterceptedMethodInvocation.proceed(InterceptorStackCallback.java:78)
+	at com.google.inject.internal.InterceptorStackCallback.intercept(InterceptorStackCallback.java:54)
+	at com.cognifide.qa.bb.aem.core.component.GlobalBarImpl$$EnhancerByGuice$$e104fe94.isInPreviewMode(<generated>)
+	at com.cognifide.qa.bb.aem.core.component.GlobalBarImpl.switchToPreviewMode(GlobalBarImpl.java:72)
+	at com.cognifide.qa.bb.aem.core.component.GlobalBarImpl$$EnhancerByGuice$$e104fe94.CGLIB$switchToPreviewMode$0(<generated>)
+	at com.cognifide.qa.bb.aem.core.component.GlobalBarImpl$$EnhancerByGuice$$e104fe94$$FastClassByGuice$$d54a3d66.invoke(<generated>)
+	at com.google.inject.internal.cglib.proxy.$MethodProxy.invokeSuper(MethodProxy.java:228)
+	at com.google.inject.internal.InterceptorStackCallback$InterceptedMethodInvocation.proceed(InterceptorStackCallback.java:76)
+	at com.cognifide.qa.bb.frame.FrameAspect.switchFrameAndProceed(FrameAspect.java:70)
+	at com.cognifide.qa.bb.frame.FrameAspect.invoke(FrameAspect.java:58)
+	at com.google.inject.internal.InterceptorStackCallback$InterceptedMethodInvocation.proceed(InterceptorStackCallback.java:78)
+	at com.google.inject.internal.InterceptorStackCallback.intercept(InterceptorStackCallback.java:54)
+	at com.cognifide.qa.bb.aem.core.component.GlobalBarImpl$$EnhancerByGuice$$e104fe94.switchToPreviewMode(<generated>)
+	at com.cognifide.qa.bb.aem.core.pages.AemAuthorPage.getContent(AemAuthorPage.java:76)
+	at bobcat.gradle.BOBCAT.AEM.BDD.pages.TestPage$$EnhancerByGuice$$e530e378.CGLIB$getContent$4(<generated>)
+	at bobcat.gradle.BOBCAT.AEM.BDD.pages.TestPage$$EnhancerByGuice$$e530e378$$FastClassByGuice$$7c460bef.invoke(<generated>)
+	at com.google.inject.internal.cglib.proxy.$MethodProxy.invokeSuper(MethodProxy.java:228)
+	at com.google.inject.internal.InterceptorStackCallback$InterceptedMethodInvocation.proceed(InterceptorStackCallback.java:76)
+	at com.cognifide.qa.bb.frame.FrameAspect.switchFrameAndProceed(FrameAspect.java:70)
+	at com.cognifide.qa.bb.frame.FrameAspect.invoke(FrameAspect.java:58)
+	at com.google.inject.internal.InterceptorStackCallback$InterceptedMethodInvocation.proceed(InterceptorStackCallback.java:78)
+	at com.google.inject.internal.InterceptorStackCallback.intercept(InterceptorStackCallback.java:54)
+	at bobcat.gradle.BOBCAT.AEM.BDD.pages.TestPage$$EnhancerByGuice$$e530e378.getContent(<generated>)
+	at bobcat.gradle.BOBCAT.AEM.BDD.steps.AuthorizationSteps.The_title_component_html_should_match(AuthorizationSteps.java:61)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:26)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:20)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:57)
+	at cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:50)
+	at cucumber.runner.TestStep.executeStep(TestStep.java:63)
+	at cucumber.runner.TestStep.run(TestStep.java:49)
+	at cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43)
+	at cucumber.runner.TestCase.run(TestCase.java:45)
+	at cucumber.runner.Runner.runPickle(Runner.java:40)
+	at cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:122)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:64)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:131)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"button[data-layer='Preview']"}
+  (Session info: chrome=76.0.3809.100)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.0', revision: '2ecb7d9a', time: '2018-10-31T20:09:30'
+System info: host: 'PRFT-10712', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.40.565498 (ea082db3280dd6..., userDataDir: C:\Users\JON~1.TRA\AppData\...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 76.0.3809.100, webStorageEnabled: true}
+Session ID: 477e5940185738ecd63498f3d8776b7e
+*** Element info: {Using=css selector, value=button[data-layer='Preview']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy40.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy42.getAttribute(Unknown Source)
+	at com.cognifide.qa.bb.webelement.BobcatWebElement.getAttribute(BobcatWebElement.java:104)
+	at org.openqa.selenium.support.ui.ExpectedConditions.getAttributeOrCssValue(ExpectedConditions.java:1139)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$38.apply(ExpectedConditions.java:1084)
+	at org.openqa.selenium.support.ui.ExpectedConditions$38.apply(ExpectedConditions.java:1079)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 78 common frames omitted
+14:41:25.592 DEBUG com.cognifide.qa.bb.aem.core.modules.Aem65FullModule:39 - Configuring Bobcat module: Aem65FullModule
+14:41:25.734 DEBUG com.cognifide.qa.bb.aem.core.modules.AemLoginModule:42 - Configuring Bobcat module: AemLoginModule
+14:41:25.754 DEBUG com.cognifide.qa.bb.aem.core.modules.AemSitesAdminModule:47 - Configuring Bobcat module: AemSitesAdminModule
+14:41:25.771 DEBUG com.cognifide.qa.bb.aem.core.modules.SlingPageActionsModule:40 - Configuring Bobcat module: SlingPageActionsModule
+14:41:25.776 DEBUG com.cognifide.qa.bb.aem.core.modules.AemComponentModule:51 - Configuring Bobcat module: AemComponentModule
+14:41:25.796 DEBUG com.cognifide.qa.bb.aem.core.modules.AemSidePanelModule:39 - Configuring Bobcat module: AemSidePanelModule
+14:41:25.801 DEBUG com.cognifide.qa.bb.aem.core.modules.AemPageModule:40 - Configuring Bobcat module: AemPageModule
+14:41:25.805 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.DialogFieldsModule:54 - Configuring Bobcat module: DialogFieldsModule
+14:41:25.819 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:49 - Configuring Bobcat module: FieldsRegistryModule
+14:41:25.819 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:51 - Registering dialog fields...
+14:41:25.821 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:72 - - registering field: CHECKBOX [class com.cognifide.qa.bb.aem.core.component.dialog.dialogfields.DefaultCheckbox]
+14:41:25.822 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:72 - - registering field: TEXTFIELD [class com.cognifide.qa.bb.aem.core.component.dialog.dialogfields.DefaultTextfield]
+14:41:25.824 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:72 - - registering field: IMAGE [class com.cognifide.qa.bb.aem.core.component.dialog.dialogfields.DefaultImage]
+14:41:25.825 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:72 - - registering field: PATHBROWSER [class com.cognifide.qa.bb.aem.core.component.dialog.dialogfields.DefaultPathBrowser]
+14:41:25.826 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:72 - - registering field: SELECT [class com.cognifide.qa.bb.aem.core.component.dialog.dialogfields.DefaultSelect]
+14:41:25.829 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:72 - - registering field: MULTIFIELD [class com.cognifide.qa.bb.aem.core.component.dialog.dialogfields.DefaultMultifield]
+14:41:25.830 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:72 - - registering field: MULTIFIELD_ITEM [class com.cognifide.qa.bb.aem.core.component.dialog.dialogfields.DefaultMultifieldItem]
+14:41:25.832 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:72 - - registering field: RADIO_GROUP [class com.cognifide.qa.bb.aem.core.component.dialog.dialogfields.DefaultRadioGroup]
+14:41:25.833 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:72 - - registering field: RICHTEXT [class com.cognifide.qa.bb.aem.core.component.dialog.dialogfields.DefaultRichText]
+14:41:25.835 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:72 - - registering field: RTE_OPTIONS [class com.cognifide.qa.bb.aem.core.component.dialog.dialogfields.rte.RteOption]
+14:41:25.837 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:72 - - registering field: RTE_OPTIONS_HYPERLINK [class com.cognifide.qa.bb.aem.core.component.dialog.dialogfields.rte.Hyperlink]
+14:41:25.839 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:72 - - registering field: RTE_OPTIONS_LISTS [class com.cognifide.qa.bb.aem.core.component.dialog.dialogfields.rte.Lists]
+14:41:25.841 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:72 - - registering field: RTE_OPTIONS_PARAGRAPH_FORMATS [class com.cognifide.qa.bb.aem.core.component.dialog.dialogfields.rte.ParagraphFormats]
+14:42:06.964 DEBUG com.cognifide.qa.bb.wait.BobcatWait:126 - value to contain "is-selected". Current value: "null" condition has not been met before timeout 
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for value to contain "is-selected". Current value: "null" (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.cognifide.qa.bb.wait.BobcatWait.until(BobcatWait.java:108)
+	at com.cognifide.qa.bb.wait.BobcatWait.isConditionMet(BobcatWait.java:124)
+	at com.cognifide.qa.bb.aem.core.component.GlobalBarImpl.isInPreviewMode(GlobalBarImpl.java:80)
+	at com.cognifide.qa.bb.aem.core.component.GlobalBarImpl$$EnhancerByGuice$$e104fe94.CGLIB$isInPreviewMode$3(<generated>)
+	at com.cognifide.qa.bb.aem.core.component.GlobalBarImpl$$EnhancerByGuice$$e104fe94$$FastClassByGuice$$d54a3d66.invoke(<generated>)
+	at com.google.inject.internal.cglib.proxy.$MethodProxy.invokeSuper(MethodProxy.java:228)
+	at com.google.inject.internal.InterceptorStackCallback$InterceptedMethodInvocation.proceed(InterceptorStackCallback.java:76)
+	at com.cognifide.qa.bb.frame.FrameAspect.switchFrameAndProceed(FrameAspect.java:70)
+	at com.cognifide.qa.bb.frame.FrameAspect.invoke(FrameAspect.java:58)
+	at com.google.inject.internal.InterceptorStackCallback$InterceptedMethodInvocation.proceed(InterceptorStackCallback.java:78)
+	at com.google.inject.internal.InterceptorStackCallback.intercept(InterceptorStackCallback.java:54)
+	at com.cognifide.qa.bb.aem.core.component.GlobalBarImpl$$EnhancerByGuice$$e104fe94.isInPreviewMode(<generated>)
+	at com.cognifide.qa.bb.aem.core.component.GlobalBarImpl.switchToPreviewMode(GlobalBarImpl.java:72)
+	at com.cognifide.qa.bb.aem.core.component.GlobalBarImpl$$EnhancerByGuice$$e104fe94.CGLIB$switchToPreviewMode$0(<generated>)
+	at com.cognifide.qa.bb.aem.core.component.GlobalBarImpl$$EnhancerByGuice$$e104fe94$$FastClassByGuice$$d54a3d66.invoke(<generated>)
+	at com.google.inject.internal.cglib.proxy.$MethodProxy.invokeSuper(MethodProxy.java:228)
+	at com.google.inject.internal.InterceptorStackCallback$InterceptedMethodInvocation.proceed(InterceptorStackCallback.java:76)
+	at com.cognifide.qa.bb.frame.FrameAspect.switchFrameAndProceed(FrameAspect.java:70)
+	at com.cognifide.qa.bb.frame.FrameAspect.invoke(FrameAspect.java:58)
+	at com.google.inject.internal.InterceptorStackCallback$InterceptedMethodInvocation.proceed(InterceptorStackCallback.java:78)
+	at com.google.inject.internal.InterceptorStackCallback.intercept(InterceptorStackCallback.java:54)
+	at com.cognifide.qa.bb.aem.core.component.GlobalBarImpl$$EnhancerByGuice$$e104fe94.switchToPreviewMode(<generated>)
+	at com.cognifide.qa.bb.aem.core.pages.AemAuthorPage.getContent(AemAuthorPage.java:76)
+	at bobcat.gradle.BOBCAT.AEM.BDD.pages.TestPage$$EnhancerByGuice$$e530e378.CGLIB$getContent$4(<generated>)
+	at bobcat.gradle.BOBCAT.AEM.BDD.pages.TestPage$$EnhancerByGuice$$e530e378$$FastClassByGuice$$7c460bef.invoke(<generated>)
+	at com.google.inject.internal.cglib.proxy.$MethodProxy.invokeSuper(MethodProxy.java:228)
+	at com.google.inject.internal.InterceptorStackCallback$InterceptedMethodInvocation.proceed(InterceptorStackCallback.java:76)
+	at com.cognifide.qa.bb.frame.FrameAspect.switchFrameAndProceed(FrameAspect.java:70)
+	at com.cognifide.qa.bb.frame.FrameAspect.invoke(FrameAspect.java:58)
+	at com.google.inject.internal.InterceptorStackCallback$InterceptedMethodInvocation.proceed(InterceptorStackCallback.java:78)
+	at com.google.inject.internal.InterceptorStackCallback.intercept(InterceptorStackCallback.java:54)
+	at bobcat.gradle.BOBCAT.AEM.BDD.pages.TestPage$$EnhancerByGuice$$e530e378.getContent(<generated>)
+	at bobcat.gradle.BOBCAT.AEM.BDD.steps.AuthorizationSteps.The_title_component_html_should_match(AuthorizationSteps.java:61)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:26)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:20)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:57)
+	at cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:50)
+	at cucumber.runner.TestStep.executeStep(TestStep.java:63)
+	at cucumber.runner.TestStep.run(TestStep.java:49)
+	at cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43)
+	at cucumber.runner.TestCase.run(TestCase.java:45)
+	at cucumber.runner.Runner.runPickle(Runner.java:40)
+	at cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:122)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:64)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:131)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"button[data-layer='Preview']"}
+  (Session info: chrome=76.0.3809.100)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.0', revision: '2ecb7d9a', time: '2018-10-31T20:09:30'
+System info: host: 'PRFT-10712', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.40.565498 (ea082db3280dd6..., userDataDir: C:\Users\JON~1.TRA\AppData\...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 76.0.3809.100, webStorageEnabled: true}
+Session ID: ddf5babfc431453a1bf7a759faf7ad08
+*** Element info: {Using=css selector, value=button[data-layer='Preview']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy40.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy42.getAttribute(Unknown Source)
+	at com.cognifide.qa.bb.webelement.BobcatWebElement.getAttribute(BobcatWebElement.java:104)
+	at org.openqa.selenium.support.ui.ExpectedConditions.getAttributeOrCssValue(ExpectedConditions.java:1139)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$38.apply(ExpectedConditions.java:1084)
+	at org.openqa.selenium.support.ui.ExpectedConditions$38.apply(ExpectedConditions.java:1079)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 78 common frames omitted
+14:48:02.988 DEBUG com.cognifide.qa.bb.aem.core.modules.Aem65FullModule:39 - Configuring Bobcat module: Aem65FullModule
+14:48:03.137 DEBUG com.cognifide.qa.bb.aem.core.modules.AemLoginModule:42 - Configuring Bobcat module: AemLoginModule
+14:48:03.156 DEBUG com.cognifide.qa.bb.aem.core.modules.AemSitesAdminModule:47 - Configuring Bobcat module: AemSitesAdminModule
+14:48:03.169 DEBUG com.cognifide.qa.bb.aem.core.modules.SlingPageActionsModule:40 - Configuring Bobcat module: SlingPageActionsModule
+14:48:03.175 DEBUG com.cognifide.qa.bb.aem.core.modules.AemComponentModule:51 - Configuring Bobcat module: AemComponentModule
+14:48:03.201 DEBUG com.cognifide.qa.bb.aem.core.modules.AemSidePanelModule:39 - Configuring Bobcat module: AemSidePanelModule
+14:48:03.206 DEBUG com.cognifide.qa.bb.aem.core.modules.AemPageModule:40 - Configuring Bobcat module: AemPageModule
+14:48:03.211 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.DialogFieldsModule:54 - Configuring Bobcat module: DialogFieldsModule
+14:48:03.232 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:49 - Configuring Bobcat module: FieldsRegistryModule
+14:48:03.233 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:51 - Registering dialog fields...
+14:48:03.237 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:72 - - registering field: CHECKBOX [class com.cognifide.qa.bb.aem.core.component.dialog.dialogfields.DefaultCheckbox]
+14:48:03.238 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:72 - - registering field: TEXTFIELD [class com.cognifide.qa.bb.aem.core.component.dialog.dialogfields.DefaultTextfield]
+14:48:03.240 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:72 - - registering field: IMAGE [class com.cognifide.qa.bb.aem.core.component.dialog.dialogfields.DefaultImage]
+14:48:03.242 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:72 - - registering field: PATHBROWSER [class com.cognifide.qa.bb.aem.core.component.dialog.dialogfields.DefaultPathBrowser]
+14:48:03.243 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:72 - - registering field: SELECT [class com.cognifide.qa.bb.aem.core.component.dialog.dialogfields.DefaultSelect]
+14:48:03.245 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:72 - - registering field: MULTIFIELD [class com.cognifide.qa.bb.aem.core.component.dialog.dialogfields.DefaultMultifield]
+14:48:03.247 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:72 - - registering field: MULTIFIELD_ITEM [class com.cognifide.qa.bb.aem.core.component.dialog.dialogfields.DefaultMultifieldItem]
+14:48:03.248 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:72 - - registering field: RADIO_GROUP [class com.cognifide.qa.bb.aem.core.component.dialog.dialogfields.DefaultRadioGroup]
+14:48:03.250 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:72 - - registering field: RICHTEXT [class com.cognifide.qa.bb.aem.core.component.dialog.dialogfields.DefaultRichText]
+14:48:03.252 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:72 - - registering field: RTE_OPTIONS [class com.cognifide.qa.bb.aem.core.component.dialog.dialogfields.rte.RteOption]
+14:48:03.254 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:72 - - registering field: RTE_OPTIONS_HYPERLINK [class com.cognifide.qa.bb.aem.core.component.dialog.dialogfields.rte.Hyperlink]
+14:48:03.257 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:72 - - registering field: RTE_OPTIONS_LISTS [class com.cognifide.qa.bb.aem.core.component.dialog.dialogfields.rte.Lists]
+14:48:03.260 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:72 - - registering field: RTE_OPTIONS_PARAGRAPH_FORMATS [class com.cognifide.qa.bb.aem.core.component.dialog.dialogfields.rte.ParagraphFormats]
+14:48:49.350 DEBUG com.cognifide.qa.bb.wait.BobcatWait:126 - value to contain "is-selected". Current value: "null" condition has not been met before timeout 
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for value to contain "is-selected". Current value: "null" (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.cognifide.qa.bb.wait.BobcatWait.until(BobcatWait.java:108)
+	at com.cognifide.qa.bb.wait.BobcatWait.isConditionMet(BobcatWait.java:124)
+	at com.cognifide.qa.bb.aem.core.component.GlobalBarImpl.isInPreviewMode(GlobalBarImpl.java:80)
+	at com.cognifide.qa.bb.aem.core.component.GlobalBarImpl$$EnhancerByGuice$$e104fe94.CGLIB$isInPreviewMode$4(<generated>)
+	at com.cognifide.qa.bb.aem.core.component.GlobalBarImpl$$EnhancerByGuice$$e104fe94$$FastClassByGuice$$d54a3d66.invoke(<generated>)
+	at com.google.inject.internal.cglib.proxy.$MethodProxy.invokeSuper(MethodProxy.java:228)
+	at com.google.inject.internal.InterceptorStackCallback$InterceptedMethodInvocation.proceed(InterceptorStackCallback.java:76)
+	at com.cognifide.qa.bb.frame.FrameAspect.switchFrameAndProceed(FrameAspect.java:70)
+	at com.cognifide.qa.bb.frame.FrameAspect.invoke(FrameAspect.java:58)
+	at com.google.inject.internal.InterceptorStackCallback$InterceptedMethodInvocation.proceed(InterceptorStackCallback.java:78)
+	at com.google.inject.internal.InterceptorStackCallback.intercept(InterceptorStackCallback.java:54)
+	at com.cognifide.qa.bb.aem.core.component.GlobalBarImpl$$EnhancerByGuice$$e104fe94.isInPreviewMode(<generated>)
+	at com.cognifide.qa.bb.aem.core.component.GlobalBarImpl.switchToPreviewMode(GlobalBarImpl.java:72)
+	at com.cognifide.qa.bb.aem.core.component.GlobalBarImpl$$EnhancerByGuice$$e104fe94.CGLIB$switchToPreviewMode$0(<generated>)
+	at com.cognifide.qa.bb.aem.core.component.GlobalBarImpl$$EnhancerByGuice$$e104fe94$$FastClassByGuice$$d54a3d66.invoke(<generated>)
+	at com.google.inject.internal.cglib.proxy.$MethodProxy.invokeSuper(MethodProxy.java:228)
+	at com.google.inject.internal.InterceptorStackCallback$InterceptedMethodInvocation.proceed(InterceptorStackCallback.java:76)
+	at com.cognifide.qa.bb.frame.FrameAspect.switchFrameAndProceed(FrameAspect.java:70)
+	at com.cognifide.qa.bb.frame.FrameAspect.invoke(FrameAspect.java:58)
+	at com.google.inject.internal.InterceptorStackCallback$InterceptedMethodInvocation.proceed(InterceptorStackCallback.java:78)
+	at com.google.inject.internal.InterceptorStackCallback.intercept(InterceptorStackCallback.java:54)
+	at com.cognifide.qa.bb.aem.core.component.GlobalBarImpl$$EnhancerByGuice$$e104fe94.switchToPreviewMode(<generated>)
+	at com.cognifide.qa.bb.aem.core.pages.AemAuthorPage.getContent(AemAuthorPage.java:76)
+	at bobcat.gradle.BOBCAT.AEM.BDD.pages.TestPage$$EnhancerByGuice$$e530e378.CGLIB$getContent$4(<generated>)
+	at bobcat.gradle.BOBCAT.AEM.BDD.pages.TestPage$$EnhancerByGuice$$e530e378$$FastClassByGuice$$7c460bef.invoke(<generated>)
+	at com.google.inject.internal.cglib.proxy.$MethodProxy.invokeSuper(MethodProxy.java:228)
+	at com.google.inject.internal.InterceptorStackCallback$InterceptedMethodInvocation.proceed(InterceptorStackCallback.java:76)
+	at com.cognifide.qa.bb.frame.FrameAspect.switchFrameAndProceed(FrameAspect.java:70)
+	at com.cognifide.qa.bb.frame.FrameAspect.invoke(FrameAspect.java:58)
+	at com.google.inject.internal.InterceptorStackCallback$InterceptedMethodInvocation.proceed(InterceptorStackCallback.java:78)
+	at com.google.inject.internal.InterceptorStackCallback.intercept(InterceptorStackCallback.java:54)
+	at bobcat.gradle.BOBCAT.AEM.BDD.pages.TestPage$$EnhancerByGuice$$e530e378.getContent(<generated>)
+	at bobcat.gradle.BOBCAT.AEM.BDD.steps.AuthorizationSteps.The_title_component_html_should_match(AuthorizationSteps.java:61)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:26)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:20)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:57)
+	at cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:50)
+	at cucumber.runner.TestStep.executeStep(TestStep.java:63)
+	at cucumber.runner.TestStep.run(TestStep.java:49)
+	at cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43)
+	at cucumber.runner.TestCase.run(TestCase.java:45)
+	at cucumber.runner.Runner.runPickle(Runner.java:40)
+	at cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:122)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:64)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:131)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"button[data-layer='Preview']"}
+  (Session info: chrome=76.0.3809.100)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.0', revision: '2ecb7d9a', time: '2018-10-31T20:09:30'
+System info: host: 'PRFT-10712', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.40.565498 (ea082db3280dd6..., userDataDir: C:\Users\JON~1.TRA\AppData\...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 76.0.3809.100, webStorageEnabled: true}
+Session ID: a1dabe7ed62782242e67881f8b0f0dd9
+*** Element info: {Using=css selector, value=button[data-layer='Preview']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy40.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy42.getAttribute(Unknown Source)
+	at com.cognifide.qa.bb.webelement.BobcatWebElement.getAttribute(BobcatWebElement.java:104)
+	at org.openqa.selenium.support.ui.ExpectedConditions.getAttributeOrCssValue(ExpectedConditions.java:1139)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$38.apply(ExpectedConditions.java:1084)
+	at org.openqa.selenium.support.ui.ExpectedConditions$38.apply(ExpectedConditions.java:1079)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 78 common frames omitted
+14:54:02.066 DEBUG com.cognifide.qa.bb.aem.core.modules.Aem65FullModule:39 - Configuring Bobcat module: Aem65FullModule
+14:54:02.241 DEBUG com.cognifide.qa.bb.aem.core.modules.AemLoginModule:42 - Configuring Bobcat module: AemLoginModule
+14:54:02.263 DEBUG com.cognifide.qa.bb.aem.core.modules.AemSitesAdminModule:47 - Configuring Bobcat module: AemSitesAdminModule
+14:54:02.276 DEBUG com.cognifide.qa.bb.aem.core.modules.SlingPageActionsModule:40 - Configuring Bobcat module: SlingPageActionsModule
+14:54:02.285 DEBUG com.cognifide.qa.bb.aem.core.modules.AemComponentModule:51 - Configuring Bobcat module: AemComponentModule
+14:54:02.317 DEBUG com.cognifide.qa.bb.aem.core.modules.AemSidePanelModule:39 - Configuring Bobcat module: AemSidePanelModule
+14:54:02.322 DEBUG com.cognifide.qa.bb.aem.core.modules.AemPageModule:40 - Configuring Bobcat module: AemPageModule
+14:54:02.326 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.DialogFieldsModule:54 - Configuring Bobcat module: DialogFieldsModule
+14:54:02.344 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:49 - Configuring Bobcat module: FieldsRegistryModule
+14:54:02.344 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:51 - Registering dialog fields...
+14:54:02.348 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:72 - - registering field: CHECKBOX [class com.cognifide.qa.bb.aem.core.component.dialog.dialogfields.DefaultCheckbox]
+14:54:02.350 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:72 - - registering field: TEXTFIELD [class com.cognifide.qa.bb.aem.core.component.dialog.dialogfields.DefaultTextfield]
+14:54:02.351 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:72 - - registering field: IMAGE [class com.cognifide.qa.bb.aem.core.component.dialog.dialogfields.DefaultImage]
+14:54:02.353 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:72 - - registering field: PATHBROWSER [class com.cognifide.qa.bb.aem.core.component.dialog.dialogfields.DefaultPathBrowser]
+14:54:02.354 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:72 - - registering field: SELECT [class com.cognifide.qa.bb.aem.core.component.dialog.dialogfields.DefaultSelect]
+14:54:02.356 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:72 - - registering field: MULTIFIELD [class com.cognifide.qa.bb.aem.core.component.dialog.dialogfields.DefaultMultifield]
+14:54:02.357 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:72 - - registering field: MULTIFIELD_ITEM [class com.cognifide.qa.bb.aem.core.component.dialog.dialogfields.DefaultMultifieldItem]
+14:54:02.358 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:72 - - registering field: RADIO_GROUP [class com.cognifide.qa.bb.aem.core.component.dialog.dialogfields.DefaultRadioGroup]
+14:54:02.359 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:72 - - registering field: RICHTEXT [class com.cognifide.qa.bb.aem.core.component.dialog.dialogfields.DefaultRichText]
+14:54:02.361 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:72 - - registering field: RTE_OPTIONS [class com.cognifide.qa.bb.aem.core.component.dialog.dialogfields.rte.RteOption]
+14:54:02.364 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:72 - - registering field: RTE_OPTIONS_HYPERLINK [class com.cognifide.qa.bb.aem.core.component.dialog.dialogfields.rte.Hyperlink]
+14:54:02.367 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:72 - - registering field: RTE_OPTIONS_LISTS [class com.cognifide.qa.bb.aem.core.component.dialog.dialogfields.rte.Lists]
+14:54:02.369 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:72 - - registering field: RTE_OPTIONS_PARAGRAPH_FORMATS [class com.cognifide.qa.bb.aem.core.component.dialog.dialogfields.rte.ParagraphFormats]
+14:54:57.313 DEBUG com.cognifide.qa.bb.wait.BobcatWait:126 - value to contain "is-selected". Current value: "null" condition has not been met before timeout 
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for value to contain "is-selected". Current value: "null" (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.0', revision: '2ecb7d9a', time: '2018-10-31T20:09:30'
+System info: host: 'PRFT-10712', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: com.cognifide.qa.bb.provider.selenium.webdriver.close.ClosingAwareWebDriverWrapper
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.40.565498 (ea082db3280dd6..., userDataDir: C:\Users\JON~1.TRA\AppData\...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 76.0.3809.100, webStorageEnabled: true}
+Session ID: be58503cc19f5eeed887636ba5ff6311
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.cognifide.qa.bb.wait.BobcatWait.until(BobcatWait.java:108)
+	at com.cognifide.qa.bb.wait.BobcatWait.isConditionMet(BobcatWait.java:124)
+	at com.cognifide.qa.bb.aem.core.component.GlobalBarImpl.isInPreviewMode(GlobalBarImpl.java:80)
+	at com.cognifide.qa.bb.aem.core.component.GlobalBarImpl$$EnhancerByGuice$$2a6ab01c.CGLIB$isInPreviewMode$1(<generated>)
+	at com.cognifide.qa.bb.aem.core.component.GlobalBarImpl$$EnhancerByGuice$$2a6ab01c$$FastClassByGuice$$1b4e0556.invoke(<generated>)
+	at com.google.inject.internal.cglib.proxy.$MethodProxy.invokeSuper(MethodProxy.java:228)
+	at com.google.inject.internal.InterceptorStackCallback$InterceptedMethodInvocation.proceed(InterceptorStackCallback.java:76)
+	at com.cognifide.qa.bb.frame.FrameAspect.switchFrameAndProceed(FrameAspect.java:70)
+	at com.cognifide.qa.bb.frame.FrameAspect.invoke(FrameAspect.java:58)
+	at com.google.inject.internal.InterceptorStackCallback$InterceptedMethodInvocation.proceed(InterceptorStackCallback.java:78)
+	at com.google.inject.internal.InterceptorStackCallback.intercept(InterceptorStackCallback.java:54)
+	at com.cognifide.qa.bb.aem.core.component.GlobalBarImpl$$EnhancerByGuice$$2a6ab01c.isInPreviewMode(<generated>)
+	at com.cognifide.qa.bb.aem.core.component.GlobalBarImpl.switchToPreviewMode(GlobalBarImpl.java:72)
+	at com.cognifide.qa.bb.aem.core.component.GlobalBarImpl$$EnhancerByGuice$$2a6ab01c.CGLIB$switchToPreviewMode$0(<generated>)
+	at com.cognifide.qa.bb.aem.core.component.GlobalBarImpl$$EnhancerByGuice$$2a6ab01c$$FastClassByGuice$$1b4e0556.invoke(<generated>)
+	at com.google.inject.internal.cglib.proxy.$MethodProxy.invokeSuper(MethodProxy.java:228)
+	at com.google.inject.internal.InterceptorStackCallback$InterceptedMethodInvocation.proceed(InterceptorStackCallback.java:76)
+	at com.cognifide.qa.bb.frame.FrameAspect.switchFrameAndProceed(FrameAspect.java:70)
+	at com.cognifide.qa.bb.frame.FrameAspect.invoke(FrameAspect.java:58)
+	at com.google.inject.internal.InterceptorStackCallback$InterceptedMethodInvocation.proceed(InterceptorStackCallback.java:78)
+	at com.google.inject.internal.InterceptorStackCallback.intercept(InterceptorStackCallback.java:54)
+	at com.cognifide.qa.bb.aem.core.component.GlobalBarImpl$$EnhancerByGuice$$2a6ab01c.switchToPreviewMode(<generated>)
+	at com.cognifide.qa.bb.aem.core.pages.AemAuthorPage.getContent(AemAuthorPage.java:76)
+	at bobcat.gradle.BOBCAT.AEM.BDD.pages.TestPage$$EnhancerByGuice$$e530e378.CGLIB$getContent$4(<generated>)
+	at bobcat.gradle.BOBCAT.AEM.BDD.pages.TestPage$$EnhancerByGuice$$e530e378$$FastClassByGuice$$7c460bef.invoke(<generated>)
+	at com.google.inject.internal.cglib.proxy.$MethodProxy.invokeSuper(MethodProxy.java:228)
+	at com.google.inject.internal.InterceptorStackCallback$InterceptedMethodInvocation.proceed(InterceptorStackCallback.java:76)
+	at com.cognifide.qa.bb.frame.FrameAspect.switchFrameAndProceed(FrameAspect.java:70)
+	at com.cognifide.qa.bb.frame.FrameAspect.invoke(FrameAspect.java:58)
+	at com.google.inject.internal.InterceptorStackCallback$InterceptedMethodInvocation.proceed(InterceptorStackCallback.java:78)
+	at com.google.inject.internal.InterceptorStackCallback.intercept(InterceptorStackCallback.java:54)
+	at bobcat.gradle.BOBCAT.AEM.BDD.pages.TestPage$$EnhancerByGuice$$e530e378.getContent(<generated>)
+	at bobcat.gradle.BOBCAT.AEM.BDD.steps.AuthorizationSteps.The_title_component_html_should_match(AuthorizationSteps.java:61)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:26)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:20)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:57)
+	at cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:50)
+	at cucumber.runner.TestStep.executeStep(TestStep.java:63)
+	at cucumber.runner.TestStep.run(TestStep.java:49)
+	at cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43)
+	at cucumber.runner.TestCase.run(TestCase.java:45)
+	at cucumber.runner.Runner.runPickle(Runner.java:40)
+	at cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:122)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:64)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:131)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+14:54:57.711 DEBUG com.cognifide.qa.bb.scope.frame.type.NamedFrame:52 - Switching to ContentFrame
+14:55:05.353 DEBUG com.cognifide.qa.bb.scope.frame.type.DefaultFrame:40 - Switching to default content
+15:07:04.839 DEBUG com.cognifide.qa.bb.aem.core.modules.Aem65FullModule:39 - Configuring Bobcat module: Aem65FullModule
+15:07:05.011 DEBUG com.cognifide.qa.bb.aem.core.modules.AemLoginModule:42 - Configuring Bobcat module: AemLoginModule
+15:07:05.061 DEBUG com.cognifide.qa.bb.aem.core.modules.AemSitesAdminModule:47 - Configuring Bobcat module: AemSitesAdminModule
+15:07:05.110 DEBUG com.cognifide.qa.bb.aem.core.modules.SlingPageActionsModule:40 - Configuring Bobcat module: SlingPageActionsModule
+15:07:05.123 DEBUG com.cognifide.qa.bb.aem.core.modules.AemComponentModule:51 - Configuring Bobcat module: AemComponentModule
+15:07:05.150 DEBUG com.cognifide.qa.bb.aem.core.modules.AemSidePanelModule:39 - Configuring Bobcat module: AemSidePanelModule
+15:07:05.158 DEBUG com.cognifide.qa.bb.aem.core.modules.AemPageModule:40 - Configuring Bobcat module: AemPageModule
+15:07:05.162 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.DialogFieldsModule:54 - Configuring Bobcat module: DialogFieldsModule
+15:07:05.181 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:49 - Configuring Bobcat module: FieldsRegistryModule
+15:07:05.182 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:51 - Registering dialog fields...
+15:07:05.184 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:72 - - registering field: CHECKBOX [class com.cognifide.qa.bb.aem.core.component.dialog.dialogfields.DefaultCheckbox]
+15:07:05.185 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:72 - - registering field: TEXTFIELD [class com.cognifide.qa.bb.aem.core.component.dialog.dialogfields.DefaultTextfield]
+15:07:05.186 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:72 - - registering field: IMAGE [class com.cognifide.qa.bb.aem.core.component.dialog.dialogfields.DefaultImage]
+15:07:05.189 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:72 - - registering field: PATHBROWSER [class com.cognifide.qa.bb.aem.core.component.dialog.dialogfields.DefaultPathBrowser]
+15:07:05.190 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:72 - - registering field: SELECT [class com.cognifide.qa.bb.aem.core.component.dialog.dialogfields.DefaultSelect]
+15:07:05.191 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:72 - - registering field: MULTIFIELD [class com.cognifide.qa.bb.aem.core.component.dialog.dialogfields.DefaultMultifield]
+15:07:05.192 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:72 - - registering field: MULTIFIELD_ITEM [class com.cognifide.qa.bb.aem.core.component.dialog.dialogfields.DefaultMultifieldItem]
+15:07:05.192 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:72 - - registering field: RADIO_GROUP [class com.cognifide.qa.bb.aem.core.component.dialog.dialogfields.DefaultRadioGroup]
+15:07:05.194 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:72 - - registering field: RICHTEXT [class com.cognifide.qa.bb.aem.core.component.dialog.dialogfields.DefaultRichText]
+15:07:05.195 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:72 - - registering field: RTE_OPTIONS [class com.cognifide.qa.bb.aem.core.component.dialog.dialogfields.rte.RteOption]
+15:07:05.197 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:72 - - registering field: RTE_OPTIONS_HYPERLINK [class com.cognifide.qa.bb.aem.core.component.dialog.dialogfields.rte.Hyperlink]
+15:07:05.199 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:72 - - registering field: RTE_OPTIONS_LISTS [class com.cognifide.qa.bb.aem.core.component.dialog.dialogfields.rte.Lists]
+15:07:05.201 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:72 - - registering field: RTE_OPTIONS_PARAGRAPH_FORMATS [class com.cognifide.qa.bb.aem.core.component.dialog.dialogfields.rte.ParagraphFormats]
+15:07:05.209 ERROR com.cognifide.qa.bb.modules.BobcatRunModule:54 - Error when binding module: bobcat.gradle.BOBCAT.AEM.BDD.test
+java.lang.ClassNotFoundException: bobcat.gradle.BOBCAT.AEM.BDD.test
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at com.cognifide.qa.bb.modules.BobcatRunModule.installFromName(BobcatRunModule.java:52)
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1382)
+	at java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:580)
+	at com.cognifide.qa.bb.modules.BobcatRunModule.configure(BobcatRunModule.java:47)
+	at com.google.inject.AbstractModule.configure(AbstractModule.java:61)
+	at com.google.inject.spi.Elements$RecordingBinder.install(Elements.java:344)
+	at com.google.inject.spi.Elements.getElements(Elements.java:103)
+	at com.google.inject.internal.InjectorShell$Builder.build(InjectorShell.java:137)
+	at com.google.inject.internal.InternalInjectorCreator.build(InternalInjectorCreator.java:103)
+	at com.google.inject.Guice.createInjector(Guice.java:87)
+	at com.google.inject.Guice.createInjector(Guice.java:69)
+	at com.google.inject.Guice.createInjector(Guice.java:59)
+	at bobcat.gradle.BOBCAT.AEM.BDD.CucumberInjectorSource.getInjector(CucumberInjectorSource.java:15)
+	at cucumber.runtime.java.guice.impl.GuiceFactory.<init>(GuiceFactory.java:16)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at cucumber.runtime.Reflections.newInstance(Reflections.java:48)
+	at cucumber.runtime.Reflections.instantiateSubclasses(Reflections.java:36)
+	at cucumber.runtime.Reflections.instantiateExactlyOneSubclass(Reflections.java:18)
+	at cucumber.runtime.java.ObjectFactoryLoader.loadObjectFactory(ObjectFactoryLoader.java:37)
+	at cucumber.runtime.java.JavaBackend.<init>(JavaBackend.java:67)
+	at cucumber.runtime.java.JavaBackend.<init>(JavaBackend.java:63)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at cucumber.runtime.Reflections.newInstance(Reflections.java:48)
+	at cucumber.runtime.Reflections.instantiateSubclasses(Reflections.java:36)
+	at cucumber.runtime.BackendModuleBackendSupplier.loadBackends(BackendModuleBackendSupplier.java:52)
+	at cucumber.runtime.BackendModuleBackendSupplier.get(BackendModuleBackendSupplier.java:39)
+	at cucumber.runner.ThreadLocalRunnerSupplier.createRunner(ThreadLocalRunnerSupplier.java:42)
+	at cucumber.runner.ThreadLocalRunnerSupplier.access$000(ThreadLocalRunnerSupplier.java:13)
+	at cucumber.runner.ThreadLocalRunnerSupplier$1.initialValue(ThreadLocalRunnerSupplier.java:22)
+	at cucumber.runner.ThreadLocalRunnerSupplier$1.initialValue(ThreadLocalRunnerSupplier.java:19)
+	at java.lang.ThreadLocal.setInitialValue(ThreadLocal.java:180)
+	at java.lang.ThreadLocal.get(ThreadLocal.java:170)
+	at cucumber.runner.ThreadLocalRunnerSupplier.get(ThreadLocalRunnerSupplier.java:38)
+	at cucumber.api.junit.Cucumber.<init>(Cucumber.java:106)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.junit.internal.builders.AnnotatedBuilder.buildRunner(AnnotatedBuilder.java:104)
+	at org.junit.internal.builders.AnnotatedBuilder.runnerForClass(AnnotatedBuilder.java:86)
+	at org.junit.runners.model.RunnerBuilder.safeRunnerForClass(RunnerBuilder.java:59)
+	at org.junit.internal.builders.AllDefaultPossibilitiesBuilder.runnerForClass(AllDefaultPossibilitiesBuilder.java:26)
+	at org.junit.runners.model.RunnerBuilder.safeRunnerForClass(RunnerBuilder.java:59)
+	at org.junit.internal.requests.ClassRequest.getRunner(ClassRequest.java:33)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:250)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+15:08:01.738 DEBUG com.cognifide.qa.bb.wait.BobcatWait:126 - value to contain "is-selected". Current value: "null" condition has not been met before timeout 
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for value to contain "is-selected". Current value: "null" (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.0', revision: '2ecb7d9a', time: '2018-10-31T20:09:30'
+System info: host: 'PRFT-10712', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: com.cognifide.qa.bb.provider.selenium.webdriver.close.ClosingAwareWebDriverWrapper
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.40.565498 (ea082db3280dd6..., userDataDir: C:\Users\JON~1.TRA\AppData\...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 76.0.3809.100, webStorageEnabled: true}
+Session ID: ca247f71998e3bb1f2c36eb3136b4968
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.cognifide.qa.bb.wait.BobcatWait.until(BobcatWait.java:108)
+	at com.cognifide.qa.bb.wait.BobcatWait.isConditionMet(BobcatWait.java:124)
+	at com.cognifide.qa.bb.aem.core.component.GlobalBarImpl.isInPreviewMode(GlobalBarImpl.java:80)
+	at com.cognifide.qa.bb.aem.core.component.GlobalBarImpl$$EnhancerByGuice$$ceab9232.CGLIB$isInPreviewMode$1(<generated>)
+	at com.cognifide.qa.bb.aem.core.component.GlobalBarImpl$$EnhancerByGuice$$ceab9232$$FastClassByGuice$$1a5c6797.invoke(<generated>)
+	at com.google.inject.internal.cglib.proxy.$MethodProxy.invokeSuper(MethodProxy.java:228)
+	at com.google.inject.internal.InterceptorStackCallback$InterceptedMethodInvocation.proceed(InterceptorStackCallback.java:76)
+	at com.cognifide.qa.bb.frame.FrameAspect.switchFrameAndProceed(FrameAspect.java:70)
+	at com.cognifide.qa.bb.frame.FrameAspect.invoke(FrameAspect.java:58)
+	at com.google.inject.internal.InterceptorStackCallback$InterceptedMethodInvocation.proceed(InterceptorStackCallback.java:78)
+	at com.google.inject.internal.InterceptorStackCallback.intercept(InterceptorStackCallback.java:54)
+	at com.cognifide.qa.bb.aem.core.component.GlobalBarImpl$$EnhancerByGuice$$ceab9232.isInPreviewMode(<generated>)
+	at com.cognifide.qa.bb.aem.core.component.GlobalBarImpl.switchToPreviewMode(GlobalBarImpl.java:72)
+	at com.cognifide.qa.bb.aem.core.component.GlobalBarImpl$$EnhancerByGuice$$ceab9232.CGLIB$switchToPreviewMode$0(<generated>)
+	at com.cognifide.qa.bb.aem.core.component.GlobalBarImpl$$EnhancerByGuice$$ceab9232$$FastClassByGuice$$1a5c6797.invoke(<generated>)
+	at com.google.inject.internal.cglib.proxy.$MethodProxy.invokeSuper(MethodProxy.java:228)
+	at com.google.inject.internal.InterceptorStackCallback$InterceptedMethodInvocation.proceed(InterceptorStackCallback.java:76)
+	at com.cognifide.qa.bb.frame.FrameAspect.switchFrameAndProceed(FrameAspect.java:70)
+	at com.cognifide.qa.bb.frame.FrameAspect.invoke(FrameAspect.java:58)
+	at com.google.inject.internal.InterceptorStackCallback$InterceptedMethodInvocation.proceed(InterceptorStackCallback.java:78)
+	at com.google.inject.internal.InterceptorStackCallback.intercept(InterceptorStackCallback.java:54)
+	at com.cognifide.qa.bb.aem.core.component.GlobalBarImpl$$EnhancerByGuice$$ceab9232.switchToPreviewMode(<generated>)
+	at com.cognifide.qa.bb.aem.core.pages.AemAuthorPage.getContent(AemAuthorPage.java:76)
+	at bobcat.gradle.BOBCAT.AEM.BDD.pages.TestPage$$EnhancerByGuice$$da0d0c7c.CGLIB$getContent$4(<generated>)
+	at bobcat.gradle.BOBCAT.AEM.BDD.pages.TestPage$$EnhancerByGuice$$da0d0c7c$$FastClassByGuice$$299de743.invoke(<generated>)
+	at com.google.inject.internal.cglib.proxy.$MethodProxy.invokeSuper(MethodProxy.java:228)
+	at com.google.inject.internal.InterceptorStackCallback$InterceptedMethodInvocation.proceed(InterceptorStackCallback.java:76)
+	at com.cognifide.qa.bb.frame.FrameAspect.switchFrameAndProceed(FrameAspect.java:70)
+	at com.cognifide.qa.bb.frame.FrameAspect.invoke(FrameAspect.java:58)
+	at com.google.inject.internal.InterceptorStackCallback$InterceptedMethodInvocation.proceed(InterceptorStackCallback.java:78)
+	at com.google.inject.internal.InterceptorStackCallback.intercept(InterceptorStackCallback.java:54)
+	at bobcat.gradle.BOBCAT.AEM.BDD.pages.TestPage$$EnhancerByGuice$$da0d0c7c.getContent(<generated>)
+	at bobcat.gradle.BOBCAT.AEM.BDD.steps.AuthorizationSteps.The_title_component_html_should_match(AuthorizationSteps.java:61)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:26)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:20)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:57)
+	at cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:50)
+	at cucumber.runner.TestStep.executeStep(TestStep.java:63)
+	at cucumber.runner.TestStep.run(TestStep.java:49)
+	at cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43)
+	at cucumber.runner.TestCase.run(TestCase.java:45)
+	at cucumber.runner.Runner.runPickle(Runner.java:40)
+	at cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:122)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:64)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:131)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+15:08:02.350 DEBUG com.cognifide.qa.bb.scope.frame.type.NamedFrame:52 - Switching to ContentFrame
+15:08:10.050 DEBUG com.cognifide.qa.bb.scope.frame.type.DefaultFrame:40 - Switching to default content
+15:13:55.274 DEBUG com.cognifide.qa.bb.aem.core.modules.Aem65FullModule:39 - Configuring Bobcat module: Aem65FullModule
+15:13:55.455 DEBUG com.cognifide.qa.bb.aem.core.modules.AemLoginModule:42 - Configuring Bobcat module: AemLoginModule
+15:13:55.480 DEBUG com.cognifide.qa.bb.aem.core.modules.AemSitesAdminModule:47 - Configuring Bobcat module: AemSitesAdminModule
+15:13:55.510 DEBUG com.cognifide.qa.bb.aem.core.modules.SlingPageActionsModule:40 - Configuring Bobcat module: SlingPageActionsModule
+15:13:55.518 DEBUG com.cognifide.qa.bb.aem.core.modules.AemComponentModule:51 - Configuring Bobcat module: AemComponentModule
+15:13:55.554 DEBUG com.cognifide.qa.bb.aem.core.modules.AemSidePanelModule:39 - Configuring Bobcat module: AemSidePanelModule
+15:13:55.560 DEBUG com.cognifide.qa.bb.aem.core.modules.AemPageModule:40 - Configuring Bobcat module: AemPageModule
+15:13:55.597 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.DialogFieldsModule:54 - Configuring Bobcat module: DialogFieldsModule
+15:13:55.622 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:49 - Configuring Bobcat module: FieldsRegistryModule
+15:13:55.623 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:51 - Registering dialog fields...
+15:13:55.626 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:72 - - registering field: CHECKBOX [class com.cognifide.qa.bb.aem.core.component.dialog.dialogfields.DefaultCheckbox]
+15:13:55.628 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:72 - - registering field: TEXTFIELD [class com.cognifide.qa.bb.aem.core.component.dialog.dialogfields.DefaultTextfield]
+15:13:55.630 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:72 - - registering field: IMAGE [class com.cognifide.qa.bb.aem.core.component.dialog.dialogfields.DefaultImage]
+15:13:55.631 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:72 - - registering field: PATHBROWSER [class com.cognifide.qa.bb.aem.core.component.dialog.dialogfields.DefaultPathBrowser]
+15:13:55.632 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:72 - - registering field: SELECT [class com.cognifide.qa.bb.aem.core.component.dialog.dialogfields.DefaultSelect]
+15:13:55.633 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:72 - - registering field: MULTIFIELD [class com.cognifide.qa.bb.aem.core.component.dialog.dialogfields.DefaultMultifield]
+15:13:55.635 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:72 - - registering field: MULTIFIELD_ITEM [class com.cognifide.qa.bb.aem.core.component.dialog.dialogfields.DefaultMultifieldItem]
+15:13:55.636 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:72 - - registering field: RADIO_GROUP [class com.cognifide.qa.bb.aem.core.component.dialog.dialogfields.DefaultRadioGroup]
+15:13:55.637 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:72 - - registering field: RICHTEXT [class com.cognifide.qa.bb.aem.core.component.dialog.dialogfields.DefaultRichText]
+15:13:55.640 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:72 - - registering field: RTE_OPTIONS [class com.cognifide.qa.bb.aem.core.component.dialog.dialogfields.rte.RteOption]
+15:13:55.642 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:72 - - registering field: RTE_OPTIONS_HYPERLINK [class com.cognifide.qa.bb.aem.core.component.dialog.dialogfields.rte.Hyperlink]
+15:13:55.644 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:72 - - registering field: RTE_OPTIONS_LISTS [class com.cognifide.qa.bb.aem.core.component.dialog.dialogfields.rte.Lists]
+15:13:55.647 DEBUG com.cognifide.qa.bb.aem.core.modules.fields.FieldsRegistryModule:72 - - registering field: RTE_OPTIONS_PARAGRAPH_FORMATS [class com.cognifide.qa.bb.aem.core.component.dialog.dialogfields.rte.ParagraphFormats]
+15:14:48.917 DEBUG com.cognifide.qa.bb.wait.BobcatWait:126 - value to contain "is-selected". Current value: "null" condition has not been met before timeout 
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for value to contain "is-selected". Current value: "null" (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.0', revision: '2ecb7d9a', time: '2018-10-31T20:09:30'
+System info: host: 'PRFT-10712', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: com.cognifide.qa.bb.provider.selenium.webdriver.close.ClosingAwareWebDriverWrapper
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.40.565498 (ea082db3280dd6..., userDataDir: C:\Users\JON~1.TRA\AppData\...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 76.0.3809.100, webStorageEnabled: true}
+Session ID: beefbd57a333022cb10046b882eb0ccd
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.cognifide.qa.bb.wait.BobcatWait.until(BobcatWait.java:108)
+	at com.cognifide.qa.bb.wait.BobcatWait.isConditionMet(BobcatWait.java:124)
+	at com.cognifide.qa.bb.aem.core.component.GlobalBarImpl.isInPreviewMode(GlobalBarImpl.java:80)
+	at com.cognifide.qa.bb.aem.core.component.GlobalBarImpl$$EnhancerByGuice$$ceab9232.CGLIB$isInPreviewMode$3(<generated>)
+	at com.cognifide.qa.bb.aem.core.component.GlobalBarImpl$$EnhancerByGuice$$ceab9232$$FastClassByGuice$$1a5c6797.invoke(<generated>)
+	at com.google.inject.internal.cglib.proxy.$MethodProxy.invokeSuper(MethodProxy.java:228)
+	at com.google.inject.internal.InterceptorStackCallback$InterceptedMethodInvocation.proceed(InterceptorStackCallback.java:76)
+	at com.cognifide.qa.bb.frame.FrameAspect.switchFrameAndProceed(FrameAspect.java:70)
+	at com.cognifide.qa.bb.frame.FrameAspect.invoke(FrameAspect.java:58)
+	at com.google.inject.internal.InterceptorStackCallback$InterceptedMethodInvocation.proceed(InterceptorStackCallback.java:78)
+	at com.google.inject.internal.InterceptorStackCallback.intercept(InterceptorStackCallback.java:54)
+	at com.cognifide.qa.bb.aem.core.component.GlobalBarImpl$$EnhancerByGuice$$ceab9232.isInPreviewMode(<generated>)
+	at com.cognifide.qa.bb.aem.core.component.GlobalBarImpl.switchToPreviewMode(GlobalBarImpl.java:72)
+	at com.cognifide.qa.bb.aem.core.component.GlobalBarImpl$$EnhancerByGuice$$ceab9232.CGLIB$switchToPreviewMode$0(<generated>)
+	at com.cognifide.qa.bb.aem.core.component.GlobalBarImpl$$EnhancerByGuice$$ceab9232$$FastClassByGuice$$1a5c6797.invoke(<generated>)
+	at com.google.inject.internal.cglib.proxy.$MethodProxy.invokeSuper(MethodProxy.java:228)
+	at com.google.inject.internal.InterceptorStackCallback$InterceptedMethodInvocation.proceed(InterceptorStackCallback.java:76)
+	at com.cognifide.qa.bb.frame.FrameAspect.switchFrameAndProceed(FrameAspect.java:70)
+	at com.cognifide.qa.bb.frame.FrameAspect.invoke(FrameAspect.java:58)
+	at com.google.inject.internal.InterceptorStackCallback$InterceptedMethodInvocation.proceed(InterceptorStackCallback.java:78)
+	at com.google.inject.internal.InterceptorStackCallback.intercept(InterceptorStackCallback.java:54)
+	at com.cognifide.qa.bb.aem.core.component.GlobalBarImpl$$EnhancerByGuice$$ceab9232.switchToPreviewMode(<generated>)
+	at com.cognifide.qa.bb.aem.core.pages.AemAuthorPage.getContent(AemAuthorPage.java:76)
+	at bobcat.gradle.BOBCAT.AEM.BDD.pages.TestPage$$EnhancerByGuice$$e530e378.CGLIB$getContent$4(<generated>)
+	at bobcat.gradle.BOBCAT.AEM.BDD.pages.TestPage$$EnhancerByGuice$$e530e378$$FastClassByGuice$$7c460bef.invoke(<generated>)
+	at com.google.inject.internal.cglib.proxy.$MethodProxy.invokeSuper(MethodProxy.java:228)
+	at com.google.inject.internal.InterceptorStackCallback$InterceptedMethodInvocation.proceed(InterceptorStackCallback.java:76)
+	at com.cognifide.qa.bb.frame.FrameAspect.switchFrameAndProceed(FrameAspect.java:70)
+	at com.cognifide.qa.bb.frame.FrameAspect.invoke(FrameAspect.java:58)
+	at com.google.inject.internal.InterceptorStackCallback$InterceptedMethodInvocation.proceed(InterceptorStackCallback.java:78)
+	at com.google.inject.internal.InterceptorStackCallback.intercept(InterceptorStackCallback.java:54)
+	at bobcat.gradle.BOBCAT.AEM.BDD.pages.TestPage$$EnhancerByGuice$$e530e378.getContent(<generated>)
+	at bobcat.gradle.BOBCAT.AEM.BDD.steps.AuthorizationSteps.The_title_component_html_should_match(AuthorizationSteps.java:61)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:26)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:20)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:57)
+	at cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:50)
+	at cucumber.runner.TestStep.executeStep(TestStep.java:63)
+	at cucumber.runner.TestStep.run(TestStep.java:49)
+	at cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43)
+	at cucumber.runner.TestCase.run(TestCase.java:45)
+	at cucumber.runner.Runner.runPickle(Runner.java:40)
+	at cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:122)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:64)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:131)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+15:14:49.305 DEBUG com.cognifide.qa.bb.scope.frame.type.NamedFrame:52 - Switching to ContentFrame
+15:14:56.114 DEBUG com.cognifide.qa.bb.scope.frame.type.DefaultFrame:40 - Switching to default content
+15:14:56.127 DEBUG com.cognifide.qa.bb.scope.frame.type.NamedFrame:52 - Switching to ContentFrame
+15:14:57.237 DEBUG com.cognifide.qa.bb.scope.frame.type.DefaultFrame:40 - Switching to default content

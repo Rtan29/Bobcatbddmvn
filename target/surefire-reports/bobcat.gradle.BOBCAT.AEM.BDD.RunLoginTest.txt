@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: bobcat.gradle.BOBCAT.AEM.BDD.RunLoginTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 3, Time elapsed: 49.755 sec
